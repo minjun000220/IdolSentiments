@@ -49,6 +49,45 @@ python main.py -y run 아일릿                                   # 확인 없�
 | 유튜브 | Data API v3 | 하루 10,000 유닛. 검색 1회=100, 댓글 100개=1. 할당량이 떨어지면 다음 날 이어서 수집 |
 | 디시 | 크롤링 (2.5초 간격, robots.txt 준수) | 댓글 많은 글만 본문+댓글, 나머지는 제목만 |
 
+## 웹 (Vercel + GitHub Actions)
+
+```
+[누구나] 결과 페이지 보기 ──▶ Vercel (web/, Next.js) ◀── 결과 JSON 커밋 시 자동 재배포
+[관리자] /admin 에서 분석 요청 ──▶ API(비밀번호 확인) ──▶ GitHub Actions 실행
+                                       수집 → SBERT 분석 → web/public/data/*.json 커밋
+```
+
+- 결과 페이지는 누구나 볼 수 있고, 분석 요청은 `/admin`에서 관리자 비밀번호로만 가능합니다.
+- 매일 03:17(한국 시간)에 등록된 그룹 전체를 자동으로 다시 분석합니다.
+- 공개 페이지에는 부정 예시 문장을 싣지 않습니다.
+
+### 1. GitHub 설정 (저장소 → Settings)
+| 위치 | 이름 | 값 |
+|---|---|---|
+| Secrets and variables → Actions → **Secrets** | `YOUTUBE_API_KEY` | 유튜브 API 키 |
+| Secrets and variables → Actions → **Variables** | `WIKI_USER_AGENT` | `idol-sentiment/0.1 (contact: 본인 메일 또는 깃허브 주소)` |
+| Actions → General → Workflow permissions | | **Read and write permissions** 선택 |
+
+### 2. GitHub 토큰 발급 (Vercel이 분석을 실행할 때 사용)
+GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate new token
+- Repository access: **Only select repositories** → 이 저장소만
+- Permissions → Repository permissions → **Actions: Read and write**
+- 다른 권한은 주지 않습니다.
+
+### 3. Vercel 배포
+1. vercel.com → GitHub로 로그인 → **Add New → Project** → 이 저장소 Import
+2. **Root Directory**: `web` 으로 지정 (Framework는 Next.js 자동 인식)
+3. **Environment Variables**:
+   - `ADMIN_PASSWORD`: 관리자 비밀번호 (길게)
+   - `GITHUB_TOKEN`: 2번에서 만든 토큰
+   - `GITHUB_REPO`: `minjun000220/IdolSentiments`
+4. **Deploy**
+
+### 로컬에서 웹 실행
+```bash
+cd web && npm install && npm run dev
+```
+
 ## 감성 모델 개선 (권장)
 
 처음에는 `config/anchors.yaml`의 기준 문장으로 zero-shot 분석을 합니다. 정확도를 높이려면:

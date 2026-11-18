@@ -153,3 +153,24 @@ def test_dc_gallery_search_parser():
     assert [p["id"] for p in picked] == ["newjeans"]                  # 글 수가 더 많은 쪽
     picked = pick_galleries(res, ["뉴진스"], members, include_members=True, max_members=5)
     assert picked[1]["id"] == "kmjgall" and picked[1]["member"] == "민지"
+
+
+def test_web_export(tmp_path):
+    import json
+    from report.web_export import export_result
+    g = load_group("newjeans")
+    m = {"rank": 1, "name": "민지", "favor": 80.123, "interest": 90.0, "intensity": 70.0, "controversy": 0.1,
+         "net": 0.8, "n": 40, "share": 0.5, "rank_lo": 1, "rank_hi": 2, "favor_lo": 70.0, "favor_hi": 85.0,
+         "low_sample": False, "quadrant": "인기", "examples": {"pos": ["좋다"], "neg": ["싫다 비난 문장"]}}
+    result = {"computed_at": "2026-11-18T03:00:00", "days": 90, "sentiment_model": "anchor", "n_docs": 1,
+              "n_sentences": 1, "n_mentions": 1, "group": {"favor": 70.0, "interest": None, "controversy": 0.1,
+              "net": 0.8, "energy": 3.0, "n": 1.0, "n_direct": 0.0, "favor_direct": None, "favor_members": 70.0},
+              "members": [m], "by_source": {"youtube": {"n": 1, "pos_ratio": 0.9, "net": 0.8, "controversy": 0.1}}}
+    export_result(result, g, tmp_path)
+    export_result(result | {"computed_at": "2026-11-19T03:00:00"}, g, tmp_path)
+    page = json.loads((tmp_path / "groups" / "newjeans.json").read_text(encoding="utf-8"))
+    assert page["members"][0]["examples"] == ["좋다"]                  # 부정 예시는 공개하지 않음
+    assert "싫다" not in json.dumps(page, ensure_ascii=False)
+    assert [h["date"] for h in page["history"]] == ["2026-11-18", "2026-11-19"]
+    idx = json.loads((tmp_path / "index.json").read_text(encoding="utf-8"))
+    assert len(idx["groups"]) == 1 and idx["groups"][0]["top_member"] == "민지"

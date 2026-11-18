@@ -1,0 +1,92 @@
+name: analyze
+run-name: ${{ github.event_name == 'schedule' && '정기 갱신' || format('분석 {0}', inputs.group) }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      group:
+        description: 그룹 이름 (예 아일릿, BTS)
+        required: true
+        type: string
+      members:
+        description: 멤버 직접 지정 (쉼표 구분, 비우면 자동)
+        required: false
+        type: string
+        default: ""
+      days:
+        description: 분석 기간 (일)
+        required: false
+        type: string
+        default: "90"
+      refresh:
+        description: 그룹 설정 다시 만들기
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: "17 18 * * *"   # 매일 03:17 KST, 등록된 그룹 전체 갱신
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analyze            # 한 번에 하나씩 (DB 캐시와 커밋 충돌 방지)
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 의존성 설치 (CPU용 PyTorch)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+
+      - name: DB·모델 캐시 복원
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/idol.db
+            ~/.cache/huggingface
+          key: idol-data-${{ github.run_id }}
+          restore-keys: idol-data-
+
+      - name: 수집 및 분석
+        env:
+          EVENT: ${{ github.event_name }}
+          GROUP: ${{ inputs.group }}
+          MEMBERS: ${{ inputs.members }}
+          DAYS: ${{ inputs.days }}
+          REFRESH: ${{ inputs.refresh }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          WIKI_USER_AGENT: ${{ vars.WIKI_USER_AGENT }}
+        run: python scripts/ci_run.py
+
+      - name: DB·모델 캐시 저장
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/idol.db
+            ~/.cache/huggingface
+          key: idol-data-${{ github.run_id }}
+
+      - name: 결과 커밋 (Vercel 자동 재배포)
+        env:
+          GROUP: ${{ inputs.group }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/public/data config/groups
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "결과 갱신: ${GROUP:-정기 갱신}"
+          git pull --rebase origin main
+          git push
