@@ -8,7 +8,7 @@
     호감도_m = 100 · [ λ·F_m + (1−λ)·P_m / max P ]
 
   관심도 = 언급량 (긍정/부정/중립 상관없이 언급된 횟수, 가중치 없음)
-    멤버: 관심도_m = 100 · ln(1+N_m) / ln(1+max N)          (그룹 안 1위 = 100)
+    멤버: 관심도_m = 100 · N_m / max N                       (그룹 안 1위 = 100, 단순 비율)
     그룹: 관심도   = 100 · ln(1+하루 언급 수) / ln(1+기준값)  (절대 점수)
 
   논란도 = Σw·p_neg / E        순호감 = Σw·(p_pos − p_neg) / E
@@ -45,7 +45,7 @@ def compute_scores(agg: dict, n_members: int, cfg: dict) -> dict:
     E = POS + NEG
 
     favor_m = member_favor(agg, n_members, cfg)
-    interest_m = 100 * np.log1p(N[m]) / max(np.log1p(N[m].max()), EPS)
+    interest_m = 100 * N[m] / max(N[m].max(), EPS)
 
     share = W[m] / max(W[m].sum(), EPS)
     member_part = float((share * favor_m).sum())
