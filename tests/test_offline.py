@@ -103,6 +103,7 @@ def test_pipeline_end_to_end(tmp_path):
         assert 0 <= m["favor"] <= 100 and 0 <= m["interest"] <= 100
         assert 1 <= m["rank_lo"] <= m["rank_hi"] <= 5
     assert 0 <= r["group"]["favor"] <= 100
+    assert r["group"]["interest"] is not None and 0 <= r["group"]["interest"] <= 100
     assert set(r["by_source"]) == {"youtube", "dcinside"}
     assert (Path(r["out_dir"]) / "mentions.csv").exists()
     from report.console import print_report
@@ -174,3 +175,12 @@ def test_web_export(tmp_path):
     assert [h["date"] for h in page["history"]] == ["2026-11-18", "2026-11-19"]
     idx = json.loads((tmp_path / "index.json").read_text(encoding="utf-8"))
     assert len(idx["groups"]) == 1 and idx["groups"][0]["top_member"] == "민지"
+
+
+def test_group_interest_absolute():
+    from scoring.metrics import effective_days, group_interest
+    assert abs(effective_days(90, 30) - 37.9) < 0.1
+    lo, _ = group_interest(100.0, 90, 30, 5000)
+    hi, daily = group_interest(23793.0, 90, 30, 5000)          # 아일릿 실제 값 수준
+    assert 0 < lo < hi < 100 and abs(daily - 628) < 2
+    assert group_interest(1e9, 90, 30, 5000)[0] == 100.0      # 상한

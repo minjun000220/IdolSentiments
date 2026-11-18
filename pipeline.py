@@ -119,9 +119,8 @@ def analyze(group: GroupConfig, settings: dict, db: DB, days: int | None = None,
     M = len(group.members)
     scores = compute_scores(aggregate(t, w, ppos, pneg, M + 1), M, sc)
     boot = bootstrap_ranks(t, w, ppos, pneg, M, sc)
-    others = [s["group"]["energy"] for s in db.latest_snapshots_except(group.key)
-              if s.get("days") == days and "group" in s]
-    scores["group"]["interest"] = group_interest(scores["group"]["energy"], others)
+    scores["group"]["interest"], scores["group"]["daily_energy"] = group_interest(
+        scores["group"]["energy"], days, sc["half_life_days"], sc["interest_ref_per_day"])
 
     mem = scores["members"]
     f_mid, i_mid = float(np.median(mem["favor"])), float(np.median(mem["interest"]))

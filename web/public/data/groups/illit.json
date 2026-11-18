@@ -24,7 +24,8 @@
   "energy": 23793.13,
   "n": 30262.0,
   "n_direct": 14848.0,
-  "interest": null
+  "interest": 75.66,
+  "daily_energy": 628.27
  },
  "members": [
   {
@@ -151,7 +152,7 @@
   {
    "date": "2026-11-18",
    "favor": 59.42,
-   "interest": null,
+   "interest": 75.66,
    "members": {
     "원희": 75.43,
     "민주": 61.45,

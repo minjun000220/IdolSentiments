@@ -77,13 +77,17 @@ def compute_scores(agg: dict, n_members: int, cfg: dict) -> dict:
     }
 
 
-def group_interest(energy: float, others: list[float]) -> float | None:
-    """그룹 관심도: 다른 그룹 스냅샷들과 비교한 백분위 (0~100). 비교 대상이 2개 미만이면 None.
-    주의: 그룹마다 수집 설정(검색 수, 페이지 수)이 같아야 공정한 비교가 됨."""
-    if len(others) < 2:
-        return None
-    allv = np.log1p(np.array(others + [energy]))
-    return float(100 * (allv < np.log1p(energy)).sum() / (len(allv) - 1))
+def effective_days(days: int, half_life: float) -> float:
+    """시간 감쇠를 반영한 유효 일수: ∫₀ᴰ 0.5^(t/h) dt"""
+    return half_life / np.log(2) * (1 - 0.5 ** (days / half_life))
+
+
+def group_interest(energy: float, days: int, half_life: float, ref_per_day: float) -> tuple[float, float]:
+    """그룹 관심도 (다른 그룹과 비교하지 않는 절대 점수).
+    하루 감정 반응량 = E / 유효일수,  관심도 = 100 · ln(1+하루반응량) / ln(1+기준값), 최대 100
+    → (관심도, 하루 반응량)"""
+    daily = energy / max(effective_days(days, half_life), 1e-9)
+    return float(min(100.0, 100 * np.log1p(daily) / np.log1p(ref_per_day))), float(daily)
 
 
 def quadrant(favor: float, interest: float, favor_mid: float, interest_mid: float, controversy: float) -> str:
