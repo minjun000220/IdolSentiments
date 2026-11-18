@@ -1,0 +1,31 @@
+# 자동 생성됨 (출처: kowiki:리센느). 멤버/별칭/갤러리가 틀리면 직접 고쳐도 됩니다.
+# 다시 만들려면: python main.py setup "리센느" --refresh
+group:
+  name: 리센느
+  aliases:
+  - 리센느
+members:
+  원이:
+    aliases:
+    - 원이
+  리브:
+    aliases:
+    - 리브
+  미나미:
+    aliases:
+    - 미나미
+  메이:
+    aliases:
+    - 메이
+  제나:
+    aliases:
+    - 제나
+youtube:
+  queries: []
+  channel_ids: []
+dcinside:
+  galleries:
+  - id: rescene1
+    type: mgallery
+    mode: list
+    name: 리센느

@@ -1,6 +1,25 @@
 {
  "groups": [
   {
+   "key": "리센느",
+   "name": "리센느",
+   "aliases": [
+    "리센느"
+   ],
+   "updated_at": "2026-11-18T09:39:35Z",
+   "favor": 60.53,
+   "interest": null,
+   "members": [
+    "미나미",
+    "리브",
+    "원이",
+    "메이",
+    "제나"
+   ],
+   "top_member": "미나미",
+   "mentions": 43895
+  },
+  {
    "key": "illit",
    "name": "아일릿",
    "aliases": [
