@@ -1,1 +1,26 @@
-{"groups": []}
+{
+ "groups": [
+  {
+   "key": "illit",
+   "name": "아일릿",
+   "aliases": [
+    "아일릿",
+    "Illit",
+    "ILL-IT",
+    "I'll-It"
+   ],
+   "updated_at": "2026-11-18T08:54:27Z",
+   "favor": 59.42,
+   "interest": null,
+   "members": [
+    "원희",
+    "민주",
+    "윤아",
+    "이로하",
+    "모카"
+   ],
+   "top_member": "원희",
+   "mentions": 30262
+  }
+ ]
+}
