@@ -19,10 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         <div className="wrap">
           {children}
-          <footer className="site-footer">
-            유튜브 댓글과 디시인사이드 게시글을 문장 단위로 분석한 추정치입니다. 실제 인기나 여론 전체를 대표하지 않으며,
-            수집 출처와 기간에 따라 달라집니다.
-          </footer>
+          <footer className="site-footer" />
         </div>
       </body>
     </html>

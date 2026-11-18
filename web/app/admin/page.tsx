@@ -66,7 +66,7 @@ export default function Admin() {
       const d = await r.json();
       if (!r.ok) { setMsg({ text: d.error, error: true }); return; }
       savePw(pw);
-      setMsg({ text: `‘${group}’ 분석을 요청했습니다. 보통 10~40분 걸리고, 끝나면 1~2분 뒤 사이트에 반영됩니다.` });
+      setMsg({ text: `‘${group}’ 분석 요청됨` });
       setGroup(""); setMembers(""); setRefresh(false);
       setTimeout(() => loadRuns(pw), 4000);
     } finally {
@@ -77,7 +77,6 @@ export default function Admin() {
   return (
     <main>
       <h1>분석 관리</h1>
-      <p className="sub">새 그룹 분석 요청은 관리자만 할 수 있습니다. 결과는 누구나 볼 수 있습니다.</p>
 
       <section className="card">
         <form className="form" onSubmit={submit}>
@@ -90,7 +89,7 @@ export default function Admin() {
             <input type="text" value={group} onChange={(e) => setGroup(e.target.value)} placeholder="예: 아일릿, BTS" maxLength={40} required />
           </label>
           <label>
-            멤버 직접 지정 <span className="muted small">(선택 · 비우면 위키데이터에서 자동으로 찾음)</span>
+            멤버 (선택)
             <input type="text" value={members} onChange={(e) => setMembers(e.target.value)} placeholder="예: 윤아,민주,모카,원희,이로하" maxLength={300} />
           </label>
           <div className="row">
@@ -100,7 +99,7 @@ export default function Admin() {
             </label>
             <label className="check">
               <input type="checkbox" checked={refresh} onChange={(e) => setRefresh(e.target.checked)} />
-              그룹 설정(멤버·갤러리) 다시 만들기
+              그룹 설정 다시 만들기
             </label>
           </div>
           <div className="row">
@@ -113,8 +112,8 @@ export default function Admin() {
 
       {runs && (
         <section className="card">
-          <div className="card-head"><h2>최근 실행</h2><span className="muted small">진행 중이면 15초마다 갱신</span></div>
-          {runs.length === 0 ? <p className="muted">아직 실행 기록이 없습니다.</p> : (
+          <div className="card-head"><h2>최근 실행</h2></div>
+          {runs.length === 0 ? <p className="muted">기록 없음</p> : (
             <div className="table-wrap">
               <table>
                 <thead><tr><th>작업</th><th>상태</th><th>시작</th><th></th></tr></thead>

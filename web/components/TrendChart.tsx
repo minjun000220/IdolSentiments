@@ -9,7 +9,7 @@ const W = 480, H = 220, M = { t: 16, r: 16, b: 32, l: 40 };
 export default function TrendChart({ history }: { history: HistoryPoint[] }) {
   const [hover, setHover] = useState<number | null>(null);
   if (history.length < 2) {
-    return <p className="muted small">추이는 두 번 이상 분석된 뒤부터 표시됩니다. (매일 자동 갱신)</p>;
+    return null;
   }
   const vals = history.map((h) => h.favor);
   const lo = Math.max(0, Math.floor((Math.min(...vals) - 5) / 5) * 5);

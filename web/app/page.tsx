@@ -10,18 +10,13 @@ export default function Home() {
     <main>
       <section className="hero">
         <h1>아이돌 그룹 멤버별 호감도 · 관심도</h1>
-        <p className="sub">
-          유튜브 댓글과 디시인사이드 게시글을 문장 단위로 나누고, SBERT 임베딩으로 긍정·부정을 분석했습니다.
-          <br />
-          <b>호감도</b>는 긍정 반응만, <b>관심도</b>는 긍정과 부정을 합친 감정 반응의 양입니다.
-        </p>
         <SearchBox groups={groups.map(({ key, name, aliases }) => ({ key, name, aliases }))} />
       </section>
 
       <section style={{ marginTop: 32 }}>
         <h2>분석된 그룹 {groups.length > 0 && <span className="muted">{groups.length}</span>}</h2>
         {groups.length === 0 ? (
-          <div className="notice">아직 분석된 그룹이 없습니다.</div>
+          <div className="notice">분석된 그룹 없음</div>
         ) : (
           <div className="grid">
             {groups.map((g) => (

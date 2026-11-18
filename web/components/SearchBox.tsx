@@ -40,7 +40,7 @@ export default function SearchBox({ groups }: { groups: Item[] }) {
       </datalist>
       {miss && (
         <div className="notice">
-          ‘{miss}’은(는) 아직 분석되지 않은 그룹입니다. 분석은 관리자가 요청하면 추가됩니다.
+          ‘{miss}’ 결과가 없습니다.
         </div>
       )}
     </form>
