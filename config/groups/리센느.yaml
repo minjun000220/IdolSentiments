@@ -4,6 +4,7 @@ group:
   name: 리센느
   aliases:
   - 리센느
+  - RESCENE
 members:
   원이:
     aliases:

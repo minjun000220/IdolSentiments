@@ -21,14 +21,15 @@
   "energy": 34611.84,
   "n": 43895.0,
   "n_direct": 13101.0,
-  "interest": null
+  "interest": 72.7,
+  "mentions_per_day": 487.72
  },
  "members": [
   {
    "rank": 1,
    "name": "미나미",
    "favor": 74.24,
-   "interest": 96.92,
+   "interest": 67.12,
    "intensity": 64.95,
    "controversy": 0.22,
    "net": 0.56,
@@ -43,13 +44,14 @@
    "examples": [
     "미나미는 진짜 엄마가 교육을 잘 한거 같음",
     "미나미 괜찮아 보여서 다행이다"
-   ]
+   ],
+   "mention_share": 0.214
   },
   {
    "rank": 2,
    "name": "리브",
    "favor": 71.83,
-   "interest": 93.48,
+   "interest": 59.58,
    "intensity": 70.56,
    "controversy": 0.17,
    "net": 0.66,
@@ -64,7 +66,8 @@
    "examples": [
     "와…노래 진짜 높다…ㅈㄴ높네진짜…어케부르냐 저거 와 리브가 진짜 잘부른다….",
     "리브 너무 잘부름.."
-   ]
+   ],
+   "mention_share": 0.19
   },
   {
    "rank": 3,
@@ -85,13 +88,14 @@
    "examples": [
     "와 원이 썸네일 너무예뻐서 헛웃음 나옴",
     "자식 키우는 입장에서 원이도 한없이 사랑 스러울 듯."
-   ]
+   ],
+   "mention_share": 0.3188
   },
   {
    "rank": 4,
    "name": "메이",
    "favor": 56.7,
-   "interest": 89.36,
+   "interest": 41.4,
    "intensity": 61.34,
    "controversy": 0.26,
    "net": 0.48,
@@ -106,13 +110,14 @@
    "examples": [
     "메이 표정 ㅋㅋ",
     "메이 표정 뿌듯해보인다"
-   ]
+   ],
+   "mention_share": 0.132
   },
   {
    "rank": 5,
    "name": "제나",
    "favor": 50.93,
-   "interest": 85.78,
+   "interest": 45.54,
    "intensity": 58.31,
    "controversy": 0.25,
    "net": 0.5,
@@ -127,7 +132,8 @@
    "examples": [
     "근데 제나가 진짜 귀엽긴함 사랑받을만함",
     "제나는 착하고 애교 덩어리"
-   ]
+   ],
+   "mention_share": 0.1452
   }
  ],
  "by_source": {
@@ -148,14 +154,15 @@
   {
    "date": "2026-11-18",
    "favor": 60.53,
-   "interest": null,
+   "interest": 72.7,
    "members": {
     "미나미": 74.24,
     "리브": 71.83,
     "원이": 64.42,
     "메이": 56.7,
     "제나": 50.93
-   }
+   },
+   "mentions_per_day": 487.72
   }
  ]
 }
