@@ -1,0 +1,187 @@
+{
+ "key": "ive",
+ "name": "IVE",
+ "aliases": [
+  "IVE",
+  "아이브",
+  "Ive"
+ ],
+ "updated_at": "2026-11-18T12:32:57Z",
+ "days": 90,
+ "sentiment_model": "anchor",
+ "counts": {
+  "docs": 23004,
+  "sentences": 25519,
+  "mentions": 22336
+ },
+ "group": {
+  "favor": 62.74,
+  "favor_direct": 60.89,
+  "favor_members": 64.59,
+  "controversy": 0.19,
+  "net": 0.61,
+  "energy": 16766.92,
+  "n": 22336.0,
+  "n_direct": 6039.0,
+  "interest": 64.79,
+  "mentions_per_day": 248.18
+ },
+ "members": [
+  {
+   "rank": 1,
+   "name": "유진",
+   "favor": 75.49,
+   "interest": 100.0,
+   "intensity": 64.99,
+   "controversy": 0.19,
+   "net": 0.63,
+   "n": 3885,
+   "share": 0.32,
+   "rank_lo": 1,
+   "rank_hi": 1,
+   "favor_lo": 74.65,
+   "favor_hi": 76.36,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.24,
+   "examples": [
+    "안유진 분위기머임 미친",
+    "안유진 ㅈㄴ 예쁜데 진짜"
+   ]
+  },
+  {
+   "rank": 2,
+   "name": "리즈",
+   "favor": 64.93,
+   "interest": 92.41,
+   "intensity": 67.5,
+   "controversy": 0.18,
+   "net": 0.65,
+   "n": 3590,
+   "share": 0.18,
+   "rank_lo": 2,
+   "rank_hi": 2,
+   "favor_lo": 63.42,
+   "favor_hi": 66.54,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.22,
+   "examples": [
+    "리즈도 착하긴 하다",
+    "리즈는 열심히 하는 모습이 참 보기좋음"
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "이서",
+   "favor": 60.59,
+   "interest": 37.22,
+   "intensity": 71.73,
+   "controversy": 0.14,
+   "net": 0.72,
+   "n": 1446,
+   "share": 0.1,
+   "rank_lo": 3,
+   "rank_hi": 4,
+   "favor_lo": 58.86,
+   "favor_hi": 62.6,
+   "low_sample": false,
+   "quadrant": "조용한 호감",
+   "mention_share": 0.09,
+   "examples": [
+    "이서가 되게 어린나이에 데뷔해서 언니들이 아직도 넘넘 큰 언니같납하 언니가 울컥한거 너무 큰일이라 울먹 칭얼",
+    "이서 뭔가 착함이 행동에 묻어있네 ㅋㅋ"
+   ]
+  },
+  {
+   "rank": 4,
+   "name": "원영",
+   "favor": 58.62,
+   "interest": 95.03,
+   "intensity": 59.35,
+   "controversy": 0.24,
+   "net": 0.51,
+   "n": 3692,
+   "share": 0.2,
+   "rank_lo": 3,
+   "rank_hi": 4,
+   "favor_lo": 56.96,
+   "favor_hi": 60.19,
+   "low_sample": false,
+   "quadrant": "화제성",
+   "mention_share": 0.23,
+   "examples": [
+    "하 장원영 안빼고 바로 대치동픽업드립치는거 ㅈㄴ 호감 샹 ヲヲヲ",
+    "아니 내가 본 장원영 중에 이 영상이 제일 이쁨 뭐야 개이쁘네"
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "가을",
+   "favor": 55.0,
+   "interest": 74.36,
+   "intensity": 60.47,
+   "controversy": 0.24,
+   "net": 0.51,
+   "n": 2889,
+   "share": 0.15,
+   "rank_lo": 5,
+   "rank_hi": 6,
+   "favor_lo": 53.08,
+   "favor_hi": 56.94,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.18,
+   "examples": [
+    "가을은 센스있고 ㅋㅋ",
+    "(가을양 귀엽다고 해도 될까요)"
+   ]
+  },
+  {
+   "rank": 6,
+   "name": "나오이 레이",
+   "favor": 53.5,
+   "interest": 20.46,
+   "intensity": 69.16,
+   "controversy": 0.17,
+   "net": 0.66,
+   "n": 795,
+   "share": 0.05,
+   "rank_lo": 5,
+   "rank_hi": 6,
+   "favor_lo": 50.96,
+   "favor_hi": 55.42,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.05,
+   "examples": [
+    "여기 레이가을 텐션 미쳤고 가까워서 그런가 카메라 구도도 제일 좋음.",
+    "여기도 레이이서원영 카메라 전환 깔끔함."
+   ]
+  }
+ ],
+ "by_source": {
+  "youtube": {
+   "n": 22336,
+   "pos_ratio": 0.63,
+   "net": 0.61,
+   "controversy": 0.19
+  }
+ },
+ "history": [
+  {
+   "date": "2026-11-18",
+   "favor": 62.74,
+   "interest": 64.79,
+   "mentions_per_day": 248.18,
+   "members": {
+    "유진": 75.49,
+    "리즈": 64.93,
+    "이서": 60.59,
+    "원영": 58.62,
+    "가을": 55.0,
+    "나오이 레이": 53.5
+   }
+  }
+ ]
+}

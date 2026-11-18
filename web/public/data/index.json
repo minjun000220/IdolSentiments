@@ -1,6 +1,28 @@
 {
  "groups": [
   {
+   "key": "ive",
+   "name": "IVE",
+   "aliases": [
+    "IVE",
+    "아이브",
+    "Ive"
+   ],
+   "updated_at": "2026-11-18T12:32:57Z",
+   "favor": 62.74,
+   "interest": 64.79,
+   "members": [
+    "유진",
+    "리즈",
+    "이서",
+    "원영",
+    "가을",
+    "나오이 레이"
+   ],
+   "top_member": "유진",
+   "mentions": 22336
+  },
+  {
    "key": "리센느",
    "name": "리센느",
    "aliases": [

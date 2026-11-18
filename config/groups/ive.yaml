@@ -1,0 +1,62 @@
+# 자동 생성됨 (출처: wikidata:Q109375061). 멤버/별칭/갤러리가 틀리면 직접 고쳐도 됩니다.
+# 다시 만들려면: python main.py setup "아이브" --refresh
+group:
+  name: IVE
+  aliases:
+  - IVE
+  - 아이브
+  - Ive
+members:
+  유진:
+    aliases:
+    - 유진
+    - 안유진
+    - An Yu-jin
+    - Yujin
+  가을:
+    aliases:
+    - 가을
+    - Gaeul
+    - 김가을
+    - Kim Gaeul
+    - Kim Ga-eul
+  나오이 레이:
+    aliases:
+    - 나오이 레이
+    - Rei
+    - 레이
+    - Naoi Rei
+    - Rei Naoi
+  원영:
+    aliases:
+    - 원영
+    - 장원영
+    - Jang Won-young
+    - Wonyoung
+    - Jang Wonyoung
+    - JANGWONYOUNG
+  리즈:
+    aliases:
+    - 리즈
+    - Liz
+    - 김지원
+    - Kim Ji-won
+    - Ive Liz
+  이서:
+    aliases:
+    - 이서
+    - Leeseo
+    - 이현서
+    - 현서
+    - Lee Hyun Seo
+    - Lee Hyeon-seo
+    - Lee Hyun-seo
+youtube:
+  queries: []
+  channel_ids: []
+dcinside:
+  galleries:
+  - id: ive_victory
+    type: mini
+    mode: list
+    name: ive
