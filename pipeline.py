@@ -28,12 +28,21 @@ def collect(group: GroupConfig, settings: dict, db: DB, sources=SOURCES, days: i
     since = now_utc() - timedelta(days=days or settings["collect"]["days"])
     counts = {}
     if "youtube" in sources:
-        from collectors.youtube import YouTubeCollector
-        yt = YouTubeCollector(settings, db, os.environ.get("YOUTUBE_API_KEY", ""))
-        counts["youtube"] = len(yt.collect(group, since))
+        try:
+            from collectors.youtube import YouTubeCollector
+            yt = YouTubeCollector(settings, db, os.environ.get("YOUTUBE_API_KEY", ""))
+            counts["youtube"] = len(yt.collect(group, since))
+        except Exception:
+            # 이미 수집한 영상의 댓글은 영상 단위로 DB에 저장돼 있으므로 그대로 분석에 쓰임
+            log.exception("[YouTube] 수집 중 오류 → 유튜브는 여기까지만 사용하고 계속 진행")
+            counts["youtube"] = "error"
     if "dcinside" in sources:
-        from collectors.dcinside import DCInsideCollector
-        counts["dcinside"] = len(DCInsideCollector(settings).collect(group, since, db=db))
+        try:
+            from collectors.dcinside import DCInsideCollector
+            counts["dcinside"] = len(DCInsideCollector(settings).collect(group, since, db=db))
+        except Exception:
+            log.exception("[DC] 수집 중 오류 → 계속 진행")
+            counts["dcinside"] = "error"
     return counts
 
 

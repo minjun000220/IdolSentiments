@@ -21,6 +21,10 @@ GROUP_TYPES = {"Q215380", "Q2088357", "Q216337", "Q641066", "Q9212979", "Q574106
 GROUP_WORDS = ("그룹", "걸그룹", "보이그룹", "밴드", "group", "band", "girl group", "boy band", "idol")
 SURNAMES = set("김이박최정강조윤장임한오서신권황안송류전홍고문양손배백허유남심노하곽성차주우구민진나지엄채원천방공현함변염여추도소석선설마길연위표명기반왕금옥육인맹제모탁국어은편용예봉경사부")
 PAREN_RE = re.compile(r"\s*[\(（].*?[\)）]")
+# 이름이지만 일반 단어로 훨씬 자주 쓰이는 것들. 본명/별칭에서 자동으로 만든 별칭이면 제외
+# (멤버의 대표 이름 자체가 이 단어면 그대로 두되 경고만 표시)
+COMMON_WORDS = set("""지원 가을 여름 겨울 하늘 보라 나라 소원 사랑 은하 미소 이슬 노을 바다 다솜 수정 정원 민주
+지수 진주 하나 태양 한결 우주 누리 보람 성공 소망 희망 기쁨 현재 미래 소라 나무 구름 보미 세상""".split())
 
 
 class Wiki:
@@ -181,7 +185,7 @@ def make_member_from_names(ko: str, en: str = "", aliases: list[str] | None = No
     al = [display]
     for a in [ko, *others]:
         for x in (a, _given(a)):
-            if x and len(x) >= 2 and x not in al:
+            if x and len(x) >= 2 and x not in al and x not in COMMON_WORDS:
                 al.append(x)
     return {"name": display, "aliases": al}
 

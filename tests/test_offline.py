@@ -186,3 +186,23 @@ def test_group_interest_absolute():
     gi, per_day = group_interest(30262, 90, 5000)                  # 아일릿 실제 값
     assert abs(per_day - 336.2) < 0.1 and abs(gi - 68.3) < 0.1
     assert group_interest(1e9, 90, 5000)[0] == 100.0               # 상한
+
+
+def test_youtube_search_skips_non_video_items(tmp_path):
+    from datetime import timedelta
+    from collectors.youtube import YouTubeCollector
+    yt = YouTubeCollector(load_settings(), DB(tmp_path / "y.db"), "dummy")
+    yt.cfg["max_searches"] = 1
+    items = [{"id": {"kind": "youtube#channel", "channelId": "UC1"}, "snippet": {"title": "채널"}},
+             {"id": {"kind": "youtube#video", "videoId": "v1"}, "snippet": {"title": "영상", "publishedAt": ""}},
+             {"id": {"kind": "youtube#playlist"}}]
+    yt._call = lambda endpoint, **kw: {"items": items}
+    vids = yt.find_videos(load_group("newjeans"), now_utc() - timedelta(days=30))
+    assert list(vids) == ["v1"]
+
+
+def test_common_word_aliases_filtered():
+    from discovery.wiki import make_member_from_names
+    m = make_member_from_names("리즈", "Liz", ["김지원", "Kim Ji-won"])
+    assert "지원" not in m["aliases"] and "김지원" in m["aliases"]
+    assert make_member_from_names("가을", "Gaeul", ["김가을"])["name"] == "가을"   # 대표 이름은 유지

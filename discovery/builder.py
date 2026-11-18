@@ -13,7 +13,7 @@ import yaml
 from collectors.base import PoliteSession
 from core.config import CONFIG_DIR, GroupConfig, load_group
 from discovery.dc_galleries import pick_galleries, search_galleries
-from discovery.wiki import Wiki, make_member_from_names
+from discovery.wiki import COMMON_WORDS, Wiki, make_member_from_names
 
 log = logging.getLogger(__name__)
 
@@ -57,6 +57,9 @@ def _print_summary(name, aliases, members, galleries, source):
     for g in galleries:
         tag = f" (멤버: {g['member']})" if g.get("member") else ""
         print(f"    - {g.get('name', g['id'])} [{g['type']}/{g['id']}] {g['mode']}{tag}")
+    common = [m["name"] for m in members if m["name"] in COMMON_WORDS]
+    if common:
+        print(f"  주의: 멤버 이름 {', '.join(common)}은(는) 일반 단어로도 자주 쓰여 오탐이 많을 수 있습니다.")
     short = [a for m in members for a in m["aliases"] if re.fullmatch(r"[가-힣]{1,2}", a)]
     if short:
         print(f"  참고: 1~2글자 이름({', '.join(short)})은 일반 단어와 겹칠 수 있습니다. "

@@ -98,7 +98,9 @@ class YouTubeCollector:
                     if pub and pub < since:
                         stop = True
                         continue
-                    vid = sn["resourceId"]["videoId"]
+                    vid = (sn.get("resourceId") or {}).get("videoId")
+                    if not vid:
+                        continue
                     videos[vid] = {"title": sn.get("title", ""), "published_at": sn.get("publishedAt", "")}
                 token = data.get("nextPageToken")
                 if stop or not token:
@@ -110,8 +112,10 @@ class YouTubeCollector:
                               maxResults=self.cfg["videos_per_search"], publishedAfter=to_iso(since) + "Z",
                               regionCode="KR", relevanceLanguage="ko")
             for it in (data or {}).get("items", []):
-                vid = it["id"]["videoId"]
-                sn = it["snippet"]
+                vid = (it.get("id") or {}).get("videoId")   # 채널/재생목록 등 영상이 아닌 결과는 건너뜀
+                if not vid:
+                    continue
+                sn = it.get("snippet") or {}
                 videos.setdefault(vid, {"title": sn.get("title", ""), "published_at": sn.get("publishedAt", "")})
             log.info("검색 '%s' → 누적 영상 %d개", q, len(videos))
         return videos
