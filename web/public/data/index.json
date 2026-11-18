@@ -23,6 +23,29 @@
    "mentions": 22336
   },
   {
+   "key": "newjeans",
+   "name": "뉴진스",
+   "aliases": [
+    "뉴진스",
+    "뉴진",
+    "NewJeans",
+    "NJZ",
+    "엔제이지"
+   ],
+   "updated_at": "2026-11-18T13:06:54Z",
+   "favor": 43.26,
+   "interest": 66.94,
+   "members": [
+    "해린",
+    "민지",
+    "혜인",
+    "다니엘",
+    "하니"
+   ],
+   "top_member": "해린",
+   "mentions": 26848
+  },
+  {
    "key": "리센느",
    "name": "리센느",
    "aliases": [

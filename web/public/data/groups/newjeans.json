@@ -1,0 +1,172 @@
+{
+ "key": "newjeans",
+ "name": "뉴진스",
+ "aliases": [
+  "뉴진스",
+  "뉴진",
+  "NewJeans",
+  "NJZ",
+  "엔제이지"
+ ],
+ "updated_at": "2026-11-18T13:06:54Z",
+ "days": 90,
+ "sentiment_model": "anchor",
+ "counts": {
+  "docs": 23699,
+  "sentences": 34705,
+  "mentions": 26848
+ },
+ "group": {
+  "favor": 43.26,
+  "favor_direct": 30.83,
+  "favor_members": 55.69,
+  "controversy": 0.48,
+  "net": 0.05,
+  "energy": 10575.49,
+  "n": 26848.0,
+  "n_direct": 16754.0,
+  "interest": 66.94,
+  "mentions_per_day": 298.31
+ },
+ "members": [
+  {
+   "rank": 1,
+   "name": "해린",
+   "favor": 71.72,
+   "interest": 100.0,
+   "intensity": 59.61,
+   "controversy": 0.27,
+   "net": 0.46,
+   "n": 3604,
+   "share": 0.27,
+   "rank_lo": 1,
+   "rank_hi": 1,
+   "favor_lo": 70.58,
+   "favor_hi": 72.79,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.36,
+   "examples": [
+    "난 진짜…아무리 봐도 해린이 여돌중에 제일 예쁜 것 같음 ..(개인의견이니까토달지마셈)",
+    "해린이는 진짜 고양이네..."
+   ]
+  },
+  {
+   "rank": 2,
+   "name": "민지",
+   "favor": 58.75,
+   "interest": 32.21,
+   "intensity": 57.99,
+   "controversy": 0.29,
+   "net": 0.41,
+   "n": 1161,
+   "share": 0.17,
+   "rank_lo": 2,
+   "rank_hi": 3,
+   "favor_lo": 55.69,
+   "favor_hi": 62.16,
+   "low_sample": false,
+   "quadrant": "조용한 호감",
+   "mention_share": 0.12,
+   "examples": [
+    "민지 나이먹을수록 더이뻐지는듯..",
+    "나한텐 민지가 올타임 미모 넘버원"
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "혜인",
+   "favor": 55.64,
+   "interest": 55.8,
+   "intensity": 56.64,
+   "controversy": 0.29,
+   "net": 0.41,
+   "n": 2011,
+   "share": 0.15,
+   "rank_lo": 2,
+   "rank_hi": 3,
+   "favor_lo": 53.19,
+   "favor_hi": 58.38,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.2,
+   "examples": [
+    "혜인이 너무 예뻐진거 봐라...ㅜㅜ 제일 막내여서 계속 성장할수록 예쁘고 분위기먹고있는데 활동도 못하는게 너",
+    "Hyein is so ethereal omg"
+   ]
+  },
+  {
+   "rank": 4,
+   "name": "다니엘",
+   "favor": 44.49,
+   "interest": 77.91,
+   "intensity": 34.16,
+   "controversy": 0.52,
+   "net": -0.04,
+   "n": 2808,
+   "share": 0.33,
+   "rank_lo": 4,
+   "rank_hi": 5,
+   "favor_lo": 41.92,
+   "favor_hi": 47.44,
+   "low_sample": false,
+   "quadrant": "논란 중심",
+   "mention_share": 0.28,
+   "examples": [
+    "다니엘 항상 응원할게.",
+    "다니엘 응원합니다"
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "하니",
+   "favor": 41.27,
+   "interest": 14.15,
+   "intensity": 48.28,
+   "controversy": 0.36,
+   "net": 0.28,
+   "n": 510,
+   "share": 0.08,
+   "rank_lo": 4,
+   "rank_hi": 5,
+   "favor_lo": 37.62,
+   "favor_hi": 45.0,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.05,
+   "examples": [
+    "Hanni being the youngest, they are so cute.",
+    "햇살여주라는 말은 진짜 하니씨를 위해 존재하는 거 같음…너무 예쁘네요…,,"
+   ]
+  }
+ ],
+ "by_source": {
+  "dcinside": {
+   "n": 539,
+   "pos_ratio": 0.39,
+   "net": 0.29,
+   "controversy": 0.36
+  },
+  "youtube": {
+   "n": 26309,
+   "pos_ratio": 0.36,
+   "net": 0.04,
+   "controversy": 0.48
+  }
+ },
+ "history": [
+  {
+   "date": "2026-11-18",
+   "favor": 43.26,
+   "interest": 66.94,
+   "mentions_per_day": 298.31,
+   "members": {
+    "해린": 71.72,
+    "민지": 58.75,
+    "혜인": 55.64,
+    "다니엘": 44.49,
+    "하니": 41.27
+   }
+  }
+ ]
+}
