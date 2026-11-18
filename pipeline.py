@@ -119,8 +119,8 @@ def analyze(group: GroupConfig, settings: dict, db: DB, days: int | None = None,
     M = len(group.members)
     scores = compute_scores(aggregate(t, w, ppos, pneg, M + 1), M, sc)
     boot = bootstrap_ranks(t, w, ppos, pneg, M, sc)
-    scores["group"]["interest"], scores["group"]["daily_energy"] = group_interest(
-        scores["group"]["energy"], days, sc["half_life_days"], sc["interest_ref_per_day"])
+    scores["group"]["interest"], scores["group"]["mentions_per_day"] = group_interest(
+        scores["group"]["n"], days, sc["interest_ref_per_day"])
 
     mem = scores["members"]
     f_mid, i_mid = float(np.median(mem["favor"])), float(np.median(mem["interest"]))
@@ -132,6 +132,7 @@ def analyze(group: GroupConfig, settings: dict, db: DB, days: int | None = None,
             "favor": float(mem["favor"][i]), "interest": float(mem["interest"][i]),
             "intensity": float(mem["intensity"][i]), "controversy": float(mem["controversy"][i]),
             "net": float(mem["net"][i]), "n": int(mem["n"][i]), "share": float(mem["share"][i]),
+            "mention_share": float(mem["n"][i] / max(mem["n"].sum(), 1)),
             "rank_lo": int(boot["rank_lo"][i]), "rank_hi": int(boot["rank_hi"][i]),
             "favor_lo": float(boot["favor_lo"][i]), "favor_hi": float(boot["favor_hi"][i]),
             "low_sample": bool(mem["n"][i] < sc["min_mentions"]),

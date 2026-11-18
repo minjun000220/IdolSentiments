@@ -24,8 +24,8 @@
   "energy": 23793.13,
   "n": 30262.0,
   "n_direct": 14848.0,
-  "interest": 75.66,
-  "daily_energy": 628.27
+  "interest": 68.34,
+  "mentions_per_day": 336.24
  },
  "members": [
   {
@@ -47,13 +47,14 @@
    "examples": [
     "아이유랑 원희 그냥 너무행복해지는조합이네...",
     "원희 소리지르는거 너무 귀엽고 무대도 모두가 즐길 수 있는 무대였어서 너무 좋았음…🥹 아일릿 일년동안 고생 "
-   ]
+   ],
+   "mention_share": 0.3061
   },
   {
    "rank": 2,
    "name": "민주",
    "favor": 61.45,
-   "interest": 93.32,
+   "interest": 96.36,
    "intensity": 63.7,
    "controversy": 0.22,
    "net": 0.57,
@@ -68,13 +69,14 @@
    "examples": [
     "민주 미모 미쳤네...",
     "민주 존예존잘미 있음"
-   ]
+   ],
+   "mention_share": 0.225
   },
   {
    "rank": 3,
    "name": "윤아",
    "favor": 57.59,
-   "interest": 90.7,
+   "interest": 91.97,
    "intensity": 62.91,
    "controversy": 0.22,
    "net": 0.57,
@@ -85,17 +87,18 @@
    "favor_lo": 55.63,
    "favor_hi": 59.55,
    "low_sample": false,
-   "quadrant": "인기",
+   "quadrant": "조용한 호감",
    "examples": [
     "다 잘하는데 윤아가 진짜 빡센 컨셉 찰떡이네 저 큰 무대에서 1도 기 안 죽고 씩씩하게 호령하면서 무대 휘어",
     "오늘 윤아 헤메코 다 너무 예쁜데 댄브까지 윤아 그 자체.."
-   ]
+   ],
+   "mention_share": 0.1551
   },
   {
    "rank": 4,
    "name": "이로하",
    "favor": 50.09,
-   "interest": 85.31,
+   "interest": 88.87,
    "intensity": 59.59,
    "controversy": 0.24,
    "net": 0.52,
@@ -110,13 +113,14 @@
    "examples": [
     "로하 예능감 미쳤네 ㅋㅋ",
     "이로하 사랑해!"
-   ]
+   ],
+   "mention_share": 0.1193
   },
   {
    "rank": 5,
    "name": "모카",
    "favor": 42.35,
-   "interest": 88.59,
+   "interest": 94.64,
    "intensity": 46.68,
    "controversy": 0.33,
    "net": 0.34,
@@ -127,11 +131,12 @@
    "favor_lo": 40.78,
    "favor_hi": 44.02,
    "low_sample": false,
-   "quadrant": "관심 부족",
+   "quadrant": "화제성",
    "examples": [
     "진심 개잘했음 감탄나옴 모카도 있었음 더 좋았을텐데ㅠㅠ",
     "우리릿 원래도 무대 잘 했지만 아바미 잇츠미 쩨뽀하겠어까지 컨셉도 더 넓어지고 이렇게 큰 무대에서도 에너지 "
-   ]
+   ],
+   "mention_share": 0.1945
   }
  ],
  "by_source": {
@@ -152,14 +157,15 @@
   {
    "date": "2026-11-18",
    "favor": 59.42,
-   "interest": 75.66,
+   "interest": 68.34,
    "members": {
     "원희": 75.43,
     "민주": 61.45,
     "윤아": 57.59,
     "이로하": 50.09,
     "모카": 42.35
-   }
+   },
+   "mentions_per_day": 336.24
   }
  ]
 }

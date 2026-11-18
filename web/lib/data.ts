@@ -17,6 +17,7 @@ export type Member = {
   favor_hi: number;
   low_sample: boolean;
   quadrant: string;
+  mention_share?: number;
   examples: string[];
 };
 
@@ -40,6 +41,7 @@ export type GroupPage = {
     favor_direct: number | null;
     favor_members: number;
     interest: number | null;
+    mentions_per_day?: number;
     controversy: number;
     net: number;
     n: number;

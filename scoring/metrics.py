@@ -7,9 +7,9 @@
     규모 P = Σw·p_pos
     호감도_m = 100 · [ λ·F_m + (1−λ)·P_m / max P ]
 
-  관심도 (긍정 + 부정, 중립 제외)
-    E = Σw·(p_pos + p_neg)
-    관심도_m = 100 · ln(1+E_m) / ln(1+max E)
+  관심도 = 언급량 (긍정/부정/중립 상관없이 언급된 횟수, 가중치 없음)
+    멤버: 관심도_m = 100 · ln(1+N_m) / ln(1+max N)          (그룹 안 1위 = 100)
+    그룹: 관심도   = 100 · ln(1+하루 언급 수) / ln(1+기준값)  (절대 점수)
 
   논란도 = Σw·p_neg / E        순호감 = Σw·(p_pos − p_neg) / E
 """
@@ -45,7 +45,7 @@ def compute_scores(agg: dict, n_members: int, cfg: dict) -> dict:
     E = POS + NEG
 
     favor_m = member_favor(agg, n_members, cfg)
-    interest_m = 100 * np.log1p(E[m]) / max(np.log1p(E[m].max()), EPS)
+    interest_m = 100 * np.log1p(N[m]) / max(np.log1p(N[m].max()), EPS)
 
     share = W[m] / max(W[m].sum(), EPS)
     member_part = float((share * favor_m).sum())
@@ -77,17 +77,11 @@ def compute_scores(agg: dict, n_members: int, cfg: dict) -> dict:
     }
 
 
-def effective_days(days: int, half_life: float) -> float:
-    """시간 감쇠를 반영한 유효 일수: ∫₀ᴰ 0.5^(t/h) dt"""
-    return half_life / np.log(2) * (1 - 0.5 ** (days / half_life))
-
-
-def group_interest(energy: float, days: int, half_life: float, ref_per_day: float) -> tuple[float, float]:
-    """그룹 관심도 (다른 그룹과 비교하지 않는 절대 점수).
-    하루 감정 반응량 = E / 유효일수,  관심도 = 100 · ln(1+하루반응량) / ln(1+기준값), 최대 100
-    → (관심도, 하루 반응량)"""
-    daily = energy / max(effective_days(days, half_life), 1e-9)
-    return float(min(100.0, 100 * np.log1p(daily) / np.log1p(ref_per_day))), float(daily)
+def group_interest(n_mentions: float, days: int, ref_per_day: float) -> tuple[float, float]:
+    """그룹 관심도 = 언급량 점수 (다른 그룹과 비교하지 않는 절대 점수).
+    → (관심도, 하루 언급 수)"""
+    per_day = n_mentions / max(days, 1)
+    return float(min(100.0, 100 * np.log1p(per_day) / np.log1p(ref_per_day))), float(per_day)
 
 
 def quadrant(favor: float, interest: float, favor_mid: float, interest_mid: float, controversy: float) -> str:

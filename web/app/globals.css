@@ -124,7 +124,7 @@ h2 { font-size: 18px; margin: 0 0 4px; letter-spacing: -0.01em; }
 .num-value { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
 
 /* KPI */
-.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-top: 20px; }
 .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
 .kpi .label { font-size: 13px; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
 .kpi .value { font-size: 32px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; line-height: 1.2; margin-top: 4px; }

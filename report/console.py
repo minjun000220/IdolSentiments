@@ -7,7 +7,7 @@ SRC_NAME = {"youtube": "유튜브", "dcinside": "디시"}
 def print_report(r: dict, show_examples: bool = True) -> None:
     c = Console()
     g = r["group"]
-    gi = f"{g['interest']:.1f} (하루 반응 {g['daily_energy']:,.0f})"
+    gi = f"{g['interest']:.1f} (하루 {g['mentions_per_day']:,.0f}건)"
     c.print(f"\n[bold]{r['group_name']}[/bold]  최근 {r['days']}일  "
             f"(원문 {r['n_docs']:,} · 문장 {r['n_sentences']:,} · 언급 {r['n_mentions']:,} · 감성모델 {r['sentiment_model']})")
     c.print(f"  그룹 호감도 [bold green]{g['favor']:.1f}[/]   그룹 관심도 [bold cyan]{gi}[/]   "
@@ -23,7 +23,7 @@ def print_report(r: dict, show_examples: bool = True) -> None:
     for m in r["members"]:
         warn = " ⚠" if m["low_sample"] else ""
         t.add_row(str(m["rank"]), m["name"] + warn, f"{m['favor']:.1f}", f"{m['interest']:.1f}",
-                  f"{m['controversy']:.2f}", f"{m['net']:+.2f}", f"{m['n']:,}",
+                  f"{m['controversy']:.2f}", f"{m['net']:+.2f}", f"{m['n']:,} ({m['mention_share']:.0%})",
                   f"{m['rank_lo']}–{m['rank_hi']}", m["quadrant"])
     c.print(t)
     if any(m["low_sample"] for m in r["members"]):

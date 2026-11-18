@@ -58,7 +58,7 @@ scoring:
   lambda_intensity: 0.7                   # 호감도 = λ·강도 + (1-λ)·규모
   beta_group_direct: 0.5                  # 그룹 호감도 = β·그룹 직접 언급 + (1-β)·멤버 가중평균
   min_mentions: 30                        # 이보다 적으면 ⚠ 표시
-  interest_ref_per_day: 5000              # 그룹 관심도 100점 기준 (하루 감정 반응량)
+  interest_ref_per_day: 5000              # 그룹 관심도 100점 기준 (하루 언급 수, 감성 무관)
   bootstrap: 300
   seed: 42
   conf:                                   # 멤버 연결 신뢰도

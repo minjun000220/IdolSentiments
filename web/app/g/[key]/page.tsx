@@ -54,6 +54,7 @@ export default async function GroupPage({ params }: Props) {
         <div className="kpi">
           <div className="label"><span className="swatch" style={{ background: "var(--interest)" }} />그룹 관심도</div>
           <div className="value">{gr.interest == null ? "—" : gr.interest.toFixed(0)}</div>
+          {gr.mentions_per_day != null && <div className="hint">하루 {Math.round(gr.mentions_per_day).toLocaleString()}건</div>}
         </div>
         <div className="kpi">
           <div className="label">순호감</div>
@@ -91,7 +92,7 @@ export default async function GroupPage({ params }: Props) {
                   <td className="barcell"><Bar value={m.favor} color="var(--favor)" /></td>
                   <td className="barcell"><Bar value={m.interest} color="var(--interest)" /></td>
                   <td className={`num ${m.net >= 0 ? "pos" : "neg"}`}>{signed(m.net)}</td>
-                  <td className="num">{m.n.toLocaleString()}</td>
+                  <td className="num">{m.n.toLocaleString()}{m.mention_share != null && <span className="muted"> · {Math.round(m.mention_share * 100)}%</span>}</td>
                   <td className="num">{m.rank_lo === m.rank_hi ? m.rank_lo : `${m.rank_lo}–${m.rank_hi}`}위</td>
                   <td><span className="badge">{m.quadrant}</span></td>
                 </tr>

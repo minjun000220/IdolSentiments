@@ -104,6 +104,10 @@ def test_pipeline_end_to_end(tmp_path):
         assert 1 <= m["rank_lo"] <= m["rank_hi"] <= 5
     assert 0 <= r["group"]["favor"] <= 100
     assert r["group"]["interest"] is not None and 0 <= r["group"]["interest"] <= 100
+    assert abs(r["group"]["mentions_per_day"] - r["group"]["n"] / 30) < 1e-6
+    top = max(r["members"], key=lambda m: m["n"])
+    assert abs(top["interest"] - 100) < 1e-6                        # 언급 1위 멤버 = 관심도 100
+    assert abs(sum(m["mention_share"] for m in r["members"]) - 1) < 1e-6
     assert set(r["by_source"]) == {"youtube", "dcinside"}
     assert (Path(r["out_dir"]) / "mentions.csv").exists()
     from report.console import print_report
@@ -162,7 +166,7 @@ def test_web_export(tmp_path):
     g = load_group("newjeans")
     m = {"rank": 1, "name": "민지", "favor": 80.123, "interest": 90.0, "intensity": 70.0, "controversy": 0.1,
          "net": 0.8, "n": 40, "share": 0.5, "rank_lo": 1, "rank_hi": 2, "favor_lo": 70.0, "favor_hi": 85.0,
-         "low_sample": False, "quadrant": "인기", "examples": {"pos": ["좋다"], "neg": ["싫다 비난 문장"]}}
+         "low_sample": False, "quadrant": "인기", "mention_share": 1.0, "examples": {"pos": ["좋다"], "neg": ["싫다 비난 문장"]}}
     result = {"computed_at": "2026-11-18T03:00:00", "days": 90, "sentiment_model": "anchor", "n_docs": 1,
               "n_sentences": 1, "n_mentions": 1, "group": {"favor": 70.0, "interest": None, "controversy": 0.1,
               "net": 0.8, "energy": 3.0, "n": 1.0, "n_direct": 0.0, "favor_direct": None, "favor_members": 70.0},
@@ -178,9 +182,7 @@ def test_web_export(tmp_path):
 
 
 def test_group_interest_absolute():
-    from scoring.metrics import effective_days, group_interest
-    assert abs(effective_days(90, 30) - 37.9) < 0.1
-    lo, _ = group_interest(100.0, 90, 30, 5000)
-    hi, daily = group_interest(23793.0, 90, 30, 5000)          # 아일릿 실제 값 수준
-    assert 0 < lo < hi < 100 and abs(daily - 628) < 2
-    assert group_interest(1e9, 90, 30, 5000)[0] == 100.0      # 상한
+    from scoring.metrics import group_interest
+    gi, per_day = group_interest(30262, 90, 5000)                  # 아일릿 실제 값
+    assert abs(per_day - 336.2) < 0.1 and abs(gi - 68.3) < 0.1
+    assert group_interest(1e9, 90, 5000)[0] == 100.0               # 상한

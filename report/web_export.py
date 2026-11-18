@@ -13,7 +13,7 @@ WEB_DATA = ROOT / "web" / "public" / "data"
 HISTORY_LIMIT = 90
 
 MEMBER_KEYS = ("rank", "name", "favor", "interest", "intensity", "controversy", "net", "n", "share",
-               "rank_lo", "rank_hi", "favor_lo", "favor_hi", "low_sample", "quadrant")
+               "rank_lo", "rank_hi", "favor_lo", "favor_hi", "low_sample", "quadrant", "mention_share")
 
 
 def _r(v, nd=2):
@@ -56,6 +56,7 @@ def export_result(result: dict, group: GroupConfig, out_dir: Path = WEB_DATA) ->
     hist_path = out_dir / "groups" / f"{group.key}.history.json"
     hist = [h for h in _load(hist_path, []) if h["date"] != page["updated_at"][:10]]
     hist.append({"date": page["updated_at"][:10], "favor": g["favor"], "interest": g.get("interest"),
+                 "mentions_per_day": g.get("mentions_per_day"),
                  "members": {m["name"]: m["favor"] for m in members}})
     hist = sorted(hist, key=lambda h: h["date"])[-HISTORY_LIMIT:]
     page["history"] = hist
@@ -67,7 +68,8 @@ def export_result(result: dict, group: GroupConfig, out_dir: Path = WEB_DATA) ->
     idx = [x for x in _load(idx_path, {"groups": []})["groups"] if x["key"] != group.key]
     top = members[0]["name"] if members else None
     idx.append({"key": group.key, "name": group.name, "aliases": group.aliases, "updated_at": page["updated_at"],
-                "favor": g["favor"], "interest": g.get("interest"), "members": [m["name"] for m in members],
+                "favor": g["favor"], "interest": g.get("interest"),
+                "members": [m["name"] for m in members],
                 "top_member": top, "mentions": result["n_mentions"]})
     idx.sort(key=lambda x: x["name"])
     _write(idx_path, {"groups": idx})
