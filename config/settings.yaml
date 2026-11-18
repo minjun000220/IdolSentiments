@@ -1,0 +1,73 @@
+# ===== 모델 =====
+model:
+  sbert: jhgan/ko-sroberta-multitask      # 해외 댓글이 많으면 paraphrase-multilingual-mpnet-base-v2
+  setfit_path: models/setfit-sentiment    # 이 폴더가 있으면 SetFit 사용, 없으면 앵커 zero-shot
+  device: null                            # null=자동, "cuda", "cpu", "mps"
+  batch_size: 64
+
+# ===== 수집 공통 =====
+collect:
+  days: 90                                # 최근 며칠치 수집/분석
+  request_delay_sec: 2.5                  # 크롤링 요청 간격 (디시)
+  user_agent: "Mozilla/5.0 (compatible; idol-sentiment-research/0.1)"
+  author_salt: "change-me"                # 작성자 해시용 솔트 (아이디는 저장하지 않음)
+
+youtube:
+  daily_quota: 10000
+  quota_reserve: 500                      # 남겨둘 여유분
+  max_searches: 15                        # search.list 1회 = 100 유닛
+  videos_per_search: 20
+  max_comment_pages: 5                    # 페이지당 댓글 100개, 1 유닛
+  comment_order: relevance                # relevance(인기순) | time
+  refetch_after_days: 3                   # 이 기간 안에 수집한 영상은 건너뜀
+
+dcinside:
+  max_list_pages: 10                      # 갤러리 목록 페이지 수 (페이지당 50개)
+  detail_min_replies: 3                   # 댓글이 이 이상인 글만 본문+댓글 수집, 나머지는 제목만
+  fetch_comments: true
+  max_comment_pages: 3
+
+# ===== 그룹 자동 설정 (처음 보는 그룹 이름을 입력했을 때) =====
+discovery:
+  # 위키미디어는 연락처가 들어간 User-Agent를 요구함. 본인 메일이나 깃허브 주소로 바꿔주세요.
+  wiki_user_agent: "idol-sentiment/0.1 (personal research; contact: CHANGE-ME)"
+  include_member_galleries: false        # true면 "그룹 멤버" 개인 갤러리도 수집 (팬 갤러리라 긍정 편향 주의)
+  max_member_galleries: 10
+  # 그룹 전용 갤러리를 못 찾았을 때 검색 모드로 쓸 일반 갤러리
+  fallback_galleries:
+    - {id: idol, type: mgallery, mode: search, name: 걸그룹}
+
+# ===== 전처리 =====
+preprocess:
+  min_chars: 4
+  max_chars: 300
+  near_dup_threshold: 0.95                # SBERT 코사인 유사도 이상이면 복붙/도배로 보고 제거
+
+# ===== NLP =====
+nlp:
+  anchor_topk: 3                          # 클래스별 가장 가까운 앵커 k개 평균
+  temperature: 0.05                       # softmax 온도 (낮을수록 확신 강함)
+  relevance_low: 0.20                     # 관련성 유사도 → 0
+  relevance_high: 0.40                    # 관련성 유사도 → 1
+
+# ===== 점수 =====
+scoring:
+  source_weight: {youtube: 1.0, dcinside: 1.0}
+  half_life_days: 30                      # 시간 감쇠 반감기
+  prior_strength: 20                      # 베이지안 보정 강도 k
+  lambda_intensity: 0.7                   # 호감도 = λ·강도 + (1-λ)·규모
+  beta_group_direct: 0.5                  # 그룹 호감도 = β·그룹 직접 언급 + (1-β)·멤버 가중평균
+  min_mentions: 30                        # 이보다 적으면 ⚠ 표시
+  bootstrap: 300
+  seed: 42
+  conf:                                   # 멤버 연결 신뢰도
+    explicit: 1.0                         # 문장에 멤버 이름 있음
+    carry: 0.6                            # 앞 문장 멤버를 이어받음
+    context_member: 0.5                   # 영상/글 제목에 멤버 1명
+    explicit_group: 1.0                   # 문장에 그룹 이름 있음
+    context_group: 0.7                    # 그룹 관련 영상/갤러리의 글
+
+# ===== 학습 =====
+training:
+  trainable_sources: [youtube]            # 라벨링/학습에 쓸 출처
+  labels_path: data/labels.csv

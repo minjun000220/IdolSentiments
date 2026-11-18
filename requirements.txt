@@ -1,0 +1,14 @@
+requests>=2.31
+beautifulsoup4>=4.12
+pyyaml>=6.0
+numpy>=1.26
+python-dotenv>=1.0
+rich>=13.0
+matplotlib>=3.8
+sentence-transformers>=3.0
+# 선택: 더 정확한 한국어 문장 분리
+# kss>=6.0
+# 선택: SetFit 학습 (python main.py train)
+# setfit>=1.1
+# datasets>=2.19
+# scikit-learn>=1.4

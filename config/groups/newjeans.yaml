@@ -1,0 +1,32 @@
+# 그룹 설정 예시. 다른 그룹은 이 파일을 복사해서 config/groups/<그룹키>.yaml 로 만들면 됨.
+group:
+  name: 뉴진스
+  aliases: [뉴진스, 뉴진, NewJeans, NJZ, 엔제이지]
+
+members:
+  민지:
+    aliases: [민지, 김민지, Minji]
+  하니:
+    aliases: [하니, 팜하니, Hanni]
+    # "하니"는 동사 어미와 겹침. 왼쪽 경계 검사로 "뭐하니"는 이미 걸러지고, 문장 맨 앞 등은 여기서 제외
+    exclude_patterns: ["하니까", "하니깐", "하니\\s*\\?"]
+  다니엘:
+    aliases: [다니엘, 대니, Danielle]
+  해린:
+    aliases: [해린, 강해린, Haerin]
+  혜인:
+    aliases: [혜인, 이혜인, Hyein]
+
+youtube:
+  # 비워두면 자동 생성: "<그룹명>", "<그룹명> <멤버>", "<멤버> 직캠" ...
+  queries: []
+  # 공식 채널 ID(UC...)를 넣으면 검색 대신 업로드 목록에서 가져와 할당량 절약 (1유닛)
+  channel_ids: []
+
+dcinside:
+  galleries:
+    # mode: list    → 그룹 전용 갤러리. 최근 글 전체 수집
+    # mode: search  → 일반 갤러리. 그룹/멤버 이름으로 검색한 글만 수집
+    - {id: newjeans, type: mgallery, mode: list}
+    # - {id: <갤러리ID>, type: main, mode: search}
+    # 주의: robots.txt에서 금지된 갤러리(m_entertainer1, produce48 등)는 자동으로 건너뜀

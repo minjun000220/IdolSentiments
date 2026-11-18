@@ -1,0 +1,6 @@
+.env
+data/*.db
+data/labels.csv
+outputs/
+models/
+__pycache__/

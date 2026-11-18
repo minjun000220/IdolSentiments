@@ -1,0 +1,60 @@
+# 자동 생성됨 (출처: wikidata:Q122179261). 멤버/별칭/갤러리가 틀리면 직접 고쳐도 됩니다.
+# 다시 만들려면: python main.py setup "아일릿" --refresh
+group:
+  name: 아일릿
+  aliases:
+  - 아일릿
+  - Illit
+  - ILL-IT
+  - I'll-It
+members:
+  윤아:
+    aliases:
+    - 윤아
+    - Yunah
+    - 노윤아
+    - No Yun-a
+    - No Yuna
+    - Noh Yunah
+    - Noh Yun-ah
+  민주:
+    aliases:
+    - 민주
+    - Minju
+    - 박민주
+    - Park Min-ju
+    - Park Minju
+    - Park Min-Ju
+    - Park Min Ju
+  모카:
+    aliases:
+    - 모카
+    - Moka
+    - 사카이 모카
+    - Sakai Moka
+    - Moka Sakai
+  원희:
+    aliases:
+    - 원희
+    - Wonhee
+    - 이원희
+    - Lee Wonhee
+    - Lee Won-hee
+    - Lee Won-hui
+  이로하:
+    aliases:
+    - 이로하
+    - 로하
+    - Iroha
+    - 호카조노 이로하
+    - Hokazono Iroha
+    - Iroha Hokazono
+youtube:
+  queries: []
+  channel_ids: []
+dcinside:
+  galleries:
+  - id: illit
+    type: mgallery
+    mode: list
+    name: 아일릿

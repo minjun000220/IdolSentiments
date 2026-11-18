@@ -1,0 +1,75 @@
+# 자동 생성됨 (출처: wikidata:Q13580495). 멤버/별칭/갤러리가 틀리면 직접 고쳐도 됩니다.
+# 다시 만들려면: python main.py setup "BTS" --refresh
+group:
+  name: 방탄소년단
+  aliases:
+  - 방탄소년단
+  - BTS
+  - 防彈少年團
+  - 비티에스
+members:
+  뷔:
+    aliases:
+    - 뷔
+    - 김태형
+    - 태형
+    - Taehyung
+    - Kim Taehyung
+    - Kim Tae-hyung
+  제이홉:
+    aliases:
+    - 제이홉
+    - 이홉
+    - J-Hope
+    - 정호석
+    - 호석
+    - Jung Ho-seok
+    - Jung Hoseok
+  진:
+    aliases:
+    - 진
+    - Jin
+    - 김석진
+    - 석진
+    - Kim Seok-jin
+    - Kim Seokjin
+  정국:
+    aliases:
+    - 정국
+    - Jung Kook
+    - Jeon Jung-kook
+    - Jeon Jeong-guk
+    - Jungkook
+  슈가:
+    aliases:
+    - 슈가
+    - Suga
+    - Agust D
+    - Min Yoon-gi
+    - Min Yoongi
+  RM:
+    aliases:
+    - RM
+    - 김남준
+    - 남준
+    - 랩몬스터
+    - 알엠
+    - Kim Nam-joon
+    - Rap Monster
+    - Real Me
+  지민:
+    aliases:
+    - 지민
+    - Jimin
+    - 박지민
+    - Park Ji-min
+    - Park Jimin
+youtube:
+  queries: []
+  channel_ids: []
+dcinside:
+  galleries:
+  - id: bts
+    type: main
+    mode: list
+    name: 방탄소년단
