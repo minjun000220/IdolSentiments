@@ -1,0 +1,217 @@
+{
+ "key": "bts",
+ "name": "방탄소년단",
+ "aliases": [
+  "방탄소년단",
+  "BTS",
+  "防彈少年團",
+  "비티에스"
+ ],
+ "updated_at": "2026-11-19T00:57:31Z",
+ "days": 90,
+ "sentiment_model": "anchor",
+ "counts": {
+  "docs": 26599,
+  "sentences": 33632,
+  "mentions": 28155
+ },
+ "group": {
+  "favor": 56.53,
+  "favor_direct": 50.54,
+  "favor_members": 62.51,
+  "controversy": 0.24,
+  "net": 0.51,
+  "energy": 16953.89,
+  "n": 28155.0,
+  "n_direct": 10058.0,
+  "interest": 67.5,
+  "mentions_per_day": 312.83
+ },
+ "members": [
+  {
+   "rank": 1,
+   "name": "진",
+   "favor": 72.77,
+   "interest": 100.0,
+   "intensity": 61.1,
+   "controversy": 0.23,
+   "net": 0.54,
+   "n": 3722,
+   "share": 0.25,
+   "rank_lo": 1,
+   "rank_hi": 1,
+   "favor_lo": 71.92,
+   "favor_hi": 73.81,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.21,
+   "examples": [
+    "진 솔콘 직관한 팬들 하나같이 진의 풍부한 성량과 호소력 깊은 음색에 섬세한 감정 전달까지 몰입도 최고라고 ",
+    "석진이가 우리에게 보여준 모습들은 이미 기준치 초과야 덕분에 정말 행복했고 앞으로도 오래 오래 함께 했으면 "
+   ]
+  },
+  {
+   "rank": 2,
+   "name": "지민",
+   "favor": 68.25,
+   "interest": 65.34,
+   "intensity": 60.59,
+   "controversy": 0.24,
+   "net": 0.51,
+   "n": 2432,
+   "share": 0.22,
+   "rank_lo": 2,
+   "rank_hi": 2,
+   "favor_lo": 65.97,
+   "favor_hi": 70.64,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.13,
+   "examples": [
+    "지민은 공부도 잘해,훈련도 잘해 너무 멋지다 👍",
+    "지민효과 대단하네"
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "뷔",
+   "favor": 64.24,
+   "interest": 61.02,
+   "intensity": 62.32,
+   "controversy": 0.22,
+   "net": 0.57,
+   "n": 2271,
+   "share": 0.17,
+   "rank_lo": 3,
+   "rank_hi": 3,
+   "favor_lo": 62.24,
+   "favor_hi": 66.35,
+   "low_sample": false,
+   "quadrant": "조용한 호감",
+   "mention_share": 0.13,
+   "examples": [
+    "버스 타고 귀가하는 태형이 정말 사랑스러워~",
+    "뷔 비주얼 진짜 레전드임."
+   ]
+  },
+  {
+   "rank": 4,
+   "name": "제이홉",
+   "favor": 57.14,
+   "interest": 59.94,
+   "intensity": 64.74,
+   "controversy": 0.18,
+   "net": 0.64,
+   "n": 2231,
+   "share": 0.09,
+   "rank_lo": 4,
+   "rank_hi": 4,
+   "favor_lo": 55.48,
+   "favor_hi": 58.74,
+   "low_sample": false,
+   "quadrant": "조용한 호감",
+   "mention_share": 0.12,
+   "examples": [
+    "제이블랙과 제이홉은 진짜 춤이 독보적이네!!!",
+    "제이홉의 저 자유롭고 여유로운 분위기가 넘 좋음 계속 보고싶어지는 광고네"
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "RM",
+   "favor": 50.89,
+   "interest": 76.84,
+   "intensity": 59.52,
+   "controversy": 0.25,
+   "net": 0.5,
+   "n": 2860,
+   "share": 0.08,
+   "rank_lo": 5,
+   "rank_hi": 6,
+   "favor_lo": 49.01,
+   "favor_hi": 52.49,
+   "low_sample": false,
+   "quadrant": "화제성",
+   "mention_share": 0.16,
+   "examples": [
+    "What happened to our leader RM😂😂too much cuteness 😅",
+    "참 멋지고 자랑스러운 리더 주니 나이 상관없이 아미들이 존경하는 멋진 청년 남준♥️✨💜"
+   ]
+  },
+  {
+   "rank": 6,
+   "name": "슈가",
+   "favor": 49.62,
+   "interest": 39.84,
+   "intensity": 61.12,
+   "controversy": 0.23,
+   "net": 0.54,
+   "n": 1483,
+   "share": 0.06,
+   "rank_lo": 5,
+   "rank_hi": 7,
+   "favor_lo": 47.64,
+   "favor_hi": 51.25,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.08,
+   "examples": [
+    "간지 간지 쩐다.슈가 너무 좋아😊😊😊",
+    "슈가 너무 귀엽♡"
+   ]
+  },
+  {
+   "rank": 7,
+   "name": "정국",
+   "favor": 48.53,
+   "interest": 83.23,
+   "intensity": 49.86,
+   "controversy": 0.33,
+   "net": 0.34,
+   "n": 3098,
+   "share": 0.14,
+   "rank_lo": 5,
+   "rank_hi": 7,
+   "favor_lo": 46.56,
+   "favor_hi": 50.45,
+   "low_sample": false,
+   "quadrant": "화제성",
+   "mention_share": 0.17,
+   "examples": [
+    "진짜 정국이 어쩜 저리 순수하고 귀여운지",
+    "초롱초롱 반짝반짝 정국이 넘 예뻐~~❤❤❤"
+   ]
+  }
+ ],
+ "by_source": {
+  "dcinside": {
+   "n": 699,
+   "pos_ratio": 0.33,
+   "net": 0.21,
+   "controversy": 0.4
+  },
+  "youtube": {
+   "n": 27456,
+   "pos_ratio": 0.58,
+   "net": 0.52,
+   "controversy": 0.24
+  }
+ },
+ "history": [
+  {
+   "date": "2026-11-19",
+   "favor": 56.53,
+   "interest": 67.5,
+   "mentions_per_day": 312.83,
+   "members": {
+    "진": 72.77,
+    "지민": 68.25,
+    "뷔": 64.24,
+    "제이홉": 57.14,
+    "RM": 50.89,
+    "슈가": 49.62,
+    "정국": 48.53
+   }
+  }
+ ]
+}

@@ -6,7 +6,7 @@
   "아이브",
   "Ive"
  ],
- "updated_at": "2026-11-18T12:32:57Z",
+ "updated_at": "2026-11-19T01:35:31Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
@@ -20,7 +20,7 @@
   "favor_members": 64.59,
   "controversy": 0.19,
   "net": 0.61,
-  "energy": 16766.92,
+  "energy": 16557.71,
   "n": 22336.0,
   "n_direct": 6039.0,
   "interest": 64.79,
@@ -106,7 +106,7 @@
    "rank_lo": 3,
    "rank_hi": 4,
    "favor_lo": 56.96,
-   "favor_hi": 60.19,
+   "favor_hi": 60.2,
    "low_sample": false,
    "quadrant": "화제성",
    "mention_share": 0.23,
@@ -127,7 +127,7 @@
    "share": 0.15,
    "rank_lo": 5,
    "rank_hi": 6,
-   "favor_lo": 53.08,
+   "favor_lo": 53.09,
    "favor_hi": 56.94,
    "low_sample": false,
    "quadrant": "관심 부족",
@@ -142,7 +142,7 @@
    "name": "나오이 레이",
    "favor": 53.5,
    "interest": 20.46,
-   "intensity": 69.16,
+   "intensity": 69.15,
    "controversy": 0.17,
    "net": 0.66,
    "n": 795,
@@ -171,6 +171,20 @@
  "history": [
   {
    "date": "2026-11-18",
+   "favor": 62.74,
+   "interest": 64.79,
+   "mentions_per_day": 248.18,
+   "members": {
+    "유진": 75.49,
+    "리즈": 64.93,
+    "이서": 60.59,
+    "원영": 58.62,
+    "가을": 55.0,
+    "나오이 레이": 53.5
+   }
+  },
+  {
+   "date": "2026-11-19",
    "favor": 62.74,
    "interest": 64.79,
    "mentions_per_day": 248.18,

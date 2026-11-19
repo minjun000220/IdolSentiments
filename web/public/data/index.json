@@ -8,7 +8,7 @@
     "아이브",
     "Ive"
    ],
-   "updated_at": "2026-11-18T12:32:57Z",
+   "updated_at": "2026-11-19T01:35:31Z",
    "favor": 62.74,
    "interest": 64.79,
    "members": [
@@ -32,7 +32,7 @@
     "NJZ",
     "엔제이지"
    ],
-   "updated_at": "2026-11-18T13:06:54Z",
+   "updated_at": "2026-11-19T01:50:00Z",
    "favor": 43.26,
    "interest": 66.94,
    "members": [
@@ -43,17 +43,18 @@
     "하니"
    ],
    "top_member": "해린",
-   "mentions": 26848
+   "mentions": 26861
   },
   {
    "key": "리센느",
    "name": "리센느",
    "aliases": [
-    "리센느"
+    "리센느",
+    "RESCENE"
    ],
-   "updated_at": "2026-11-18T09:39:35Z",
-   "favor": 60.53,
-   "interest": 72.7,
+   "updated_at": "2026-11-19T02:09:57Z",
+   "favor": 60.16,
+   "interest": 72.86,
    "members": [
     "미나미",
     "리브",
@@ -62,7 +63,31 @@
     "제나"
    ],
    "top_member": "미나미",
-   "mentions": 43895
+   "mentions": 44497
+  },
+  {
+   "key": "bts",
+   "name": "방탄소년단",
+   "aliases": [
+    "방탄소년단",
+    "BTS",
+    "防彈少年團",
+    "비티에스"
+   ],
+   "updated_at": "2026-11-19T00:57:31Z",
+   "favor": 56.53,
+   "interest": 67.5,
+   "members": [
+    "진",
+    "지민",
+    "뷔",
+    "제이홉",
+    "RM",
+    "슈가",
+    "정국"
+   ],
+   "top_member": "진",
+   "mentions": 28155
   },
   {
    "key": "illit",
@@ -73,9 +98,9 @@
     "ILL-IT",
     "I'll-It"
    ],
-   "updated_at": "2026-11-18T08:54:27Z",
-   "favor": 59.42,
-   "interest": 68.34,
+   "updated_at": "2026-11-19T01:35:26Z",
+   "favor": 59.38,
+   "interest": 70.03,
    "members": [
     "원희",
     "민주",
@@ -84,7 +109,7 @@
     "모카"
    ],
    "top_member": "원희",
-   "mentions": 30262
+   "mentions": 34947
   }
  ]
 }

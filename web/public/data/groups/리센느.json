@@ -2,72 +2,73 @@
  "key": "리센느",
  "name": "리센느",
  "aliases": [
-  "리센느"
+  "리센느",
+  "RESCENE"
  ],
- "updated_at": "2026-11-18T09:39:35Z",
+ "updated_at": "2026-11-19T02:09:57Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 39148,
-  "sentences": 54056,
-  "mentions": 43895
+  "docs": 40187,
+  "sentences": 55182,
+  "mentions": 44497
  },
  "group": {
-  "favor": 60.53,
-  "favor_direct": 55.14,
-  "favor_members": 65.91,
+  "favor": 60.16,
+  "favor_direct": 54.44,
+  "favor_members": 65.89,
   "controversy": 0.27,
-  "net": 0.46,
-  "energy": 34611.84,
-  "n": 43895.0,
-  "n_direct": 13101.0,
-  "interest": 72.7,
-  "mentions_per_day": 487.72
+  "net": 0.45,
+  "energy": 34450.44,
+  "n": 44497.0,
+  "n_direct": 13662.0,
+  "interest": 72.86,
+  "mentions_per_day": 494.41
  },
  "members": [
   {
    "rank": 1,
    "name": "미나미",
-   "favor": 74.24,
-   "interest": 67.12,
-   "intensity": 64.95,
+   "favor": 74.22,
+   "interest": 67.16,
+   "intensity": 64.92,
    "controversy": 0.22,
    "net": 0.56,
-   "n": 6590,
+   "n": 6596,
    "share": 0.25,
    "rank_lo": 1,
    "rank_hi": 1,
-   "favor_lo": 72.65,
-   "favor_hi": 76.06,
+   "favor_lo": 72.73,
+   "favor_hi": 76.07,
    "low_sample": false,
    "quadrant": "인기",
+   "mention_share": 0.21,
    "examples": [
     "미나미는 진짜 엄마가 교육을 잘 한거 같음",
     "미나미 괜찮아 보여서 다행이다"
-   ],
-   "mention_share": 0.214
+   ]
   },
   {
    "rank": 2,
    "name": "리브",
-   "favor": 71.83,
-   "interest": 59.58,
-   "intensity": 70.56,
+   "favor": 71.77,
+   "interest": 59.73,
+   "intensity": 70.46,
    "controversy": 0.17,
    "net": 0.66,
-   "n": 5850,
+   "n": 5867,
    "share": 0.18,
    "rank_lo": 2,
    "rank_hi": 2,
-   "favor_lo": 70.35,
-   "favor_hi": 73.26,
+   "favor_lo": 70.21,
+   "favor_hi": 73.1,
    "low_sample": false,
    "quadrant": "인기",
+   "mention_share": 0.19,
    "examples": [
     "와…노래 진짜 높다…ㅈㄴ높네진짜…어케부르냐 저거 와 리브가 진짜 잘부른다….",
     "리브 너무 잘부름.."
-   ],
-   "mention_share": 0.19
+   ]
   },
   {
    "rank": 3,
@@ -77,74 +78,74 @@
    "intensity": 49.18,
    "controversy": 0.38,
    "net": 0.24,
-   "n": 9818,
-   "share": 0.35,
+   "n": 9822,
+   "share": 0.34,
    "rank_lo": 3,
    "rank_hi": 3,
-   "favor_lo": 63.76,
-   "favor_hi": 65.07,
+   "favor_lo": 63.7,
+   "favor_hi": 65.06,
    "low_sample": false,
    "quadrant": "인기",
+   "mention_share": 0.32,
    "examples": [
     "와 원이 썸네일 너무예뻐서 헛웃음 나옴",
     "자식 키우는 입장에서 원이도 한없이 사랑 스러울 듯."
-   ],
-   "mention_share": 0.3188
+   ]
   },
   {
    "rank": 4,
    "name": "메이",
-   "favor": 56.7,
-   "interest": 41.4,
-   "intensity": 61.34,
+   "favor": 56.69,
+   "interest": 41.51,
+   "intensity": 61.29,
    "controversy": 0.26,
    "net": 0.48,
-   "n": 4065,
+   "n": 4077,
    "share": 0.13,
    "rank_lo": 4,
    "rank_hi": 4,
-   "favor_lo": 55.44,
-   "favor_hi": 58.02,
+   "favor_lo": 55.35,
+   "favor_hi": 57.98,
    "low_sample": false,
    "quadrant": "관심 부족",
+   "mention_share": 0.13,
    "examples": [
     "메이 표정 ㅋㅋ",
     "메이 표정 뿌듯해보인다"
-   ],
-   "mention_share": 0.132
+   ]
   },
   {
    "rank": 5,
    "name": "제나",
-   "favor": 50.93,
+   "favor": 50.91,
    "interest": 45.54,
-   "intensity": 58.31,
+   "intensity": 58.3,
    "controversy": 0.25,
    "net": 0.5,
-   "n": 4471,
+   "n": 4473,
    "share": 0.1,
    "rank_lo": 5,
    "rank_hi": 5,
-   "favor_lo": 49.74,
-   "favor_hi": 52.35,
+   "favor_lo": 49.61,
+   "favor_hi": 52.21,
    "low_sample": false,
    "quadrant": "관심 부족",
+   "mention_share": 0.15,
    "examples": [
     "근데 제나가 진짜 귀엽긴함 사랑받을만함",
     "제나는 착하고 애교 덩어리"
-   ],
-   "mention_share": 0.1452
+   ]
   }
  ],
  "by_source": {
   "dcinside": {
-   "n": 840,
-   "pos_ratio": 0.44,
+   "n": 1435,
+   "pos_ratio": 0.42,
    "net": 0.35,
-   "controversy": 0.33
+   "controversy": 0.32
   },
   "youtube": {
-   "n": 43055,
+   "n": 43062,
    "pos_ratio": 0.58,
    "net": 0.46,
    "controversy": 0.27
@@ -163,6 +164,19 @@
     "제나": 50.93
    },
    "mentions_per_day": 487.72
+  },
+  {
+   "date": "2026-11-19",
+   "favor": 60.16,
+   "interest": 72.86,
+   "mentions_per_day": 494.41,
+   "members": {
+    "미나미": 74.22,
+    "리브": 71.77,
+    "원이": 64.42,
+    "메이": 56.69,
+    "제나": 50.91
+   }
   }
  ]
 }
