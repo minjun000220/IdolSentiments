@@ -90,6 +90,33 @@
    "mentions": 28155
   },
   {
+   "key": "girlsgeneration",
+   "name": "소녀시대",
+   "aliases": [
+    "소녀시대",
+    "Girls' Generation",
+    "소시",
+    "Girls Generation",
+    "So nyeo shsi dae",
+    "SNSD"
+   ],
+   "updated_at": "2026-11-19T10:13:08Z",
+   "favor": 54.88,
+   "interest": 69.87,
+   "members": [
+    "효연",
+    "유리",
+    "윤아",
+    "수영",
+    "태연",
+    "써니",
+    "서현",
+    "티파니 영"
+   ],
+   "top_member": "효연",
+   "mentions": 34491
+  },
+  {
    "key": "illit",
    "name": "아일릿",
    "aliases": [

@@ -1,0 +1,242 @@
+{
+ "key": "girlsgeneration",
+ "name": "소녀시대",
+ "aliases": [
+  "소녀시대",
+  "Girls' Generation",
+  "소시",
+  "Girls Generation",
+  "So nyeo shsi dae",
+  "SNSD"
+ ],
+ "updated_at": "2026-11-19T10:13:08Z",
+ "days": 90,
+ "sentiment_model": "anchor",
+ "counts": {
+  "docs": 30542,
+  "sentences": 41555,
+  "mentions": 34491
+ },
+ "group": {
+  "favor": 54.88,
+  "favor_direct": 49.54,
+  "favor_members": 60.23,
+  "controversy": 0.26,
+  "net": 0.48,
+  "energy": 12596.5,
+  "n": 34491.0,
+  "n_direct": 14398.0,
+  "interest": 69.87,
+  "mentions_per_day": 383.23
+ },
+ "members": [
+  {
+   "rank": 1,
+   "name": "효연",
+   "favor": 74.76,
+   "interest": 100.0,
+   "intensity": 63.94,
+   "controversy": 0.22,
+   "net": 0.57,
+   "n": 5797,
+   "share": 0.27,
+   "rank_lo": 1,
+   "rank_hi": 1,
+   "favor_lo": 73.92,
+   "favor_hi": 75.52,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.29,
+   "examples": [
+    "효연언니 너무 고마워요",
+    "효연언니 ㅋㅋ"
+   ]
+  },
+  {
+   "rank": 2,
+   "name": "유리",
+   "favor": 61.64,
+   "interest": 91.0,
+   "intensity": 60.23,
+   "controversy": 0.26,
+   "net": 0.48,
+   "n": 5275,
+   "share": 0.18,
+   "rank_lo": 2,
+   "rank_hi": 2,
+   "favor_lo": 59.74,
+   "favor_hi": 63.61,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.26,
+   "examples": [
+    "유리 눈빛 총명한거 봐라...",
+    "유리 사랑해"
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "윤아",
+   "favor": 56.45,
+   "interest": 35.88,
+   "intensity": 61.58,
+   "controversy": 0.23,
+   "net": 0.54,
+   "n": 2080,
+   "share": 0.12,
+   "rank_lo": 3,
+   "rank_hi": 4,
+   "favor_lo": 54.36,
+   "favor_hi": 58.48,
+   "low_sample": false,
+   "quadrant": "조용한 호감",
+   "mention_share": 0.1,
+   "examples": [
+    "와 진짜 다 이쁜데 마지막에 윤아 나올때 뭔가 모를 아우라가 느껴지네 ㅋㅋ",
+    "윤아 진짜 이쁘다."
+   ]
+  },
+  {
+   "rank": 4,
+   "name": "수영",
+   "favor": 55.6,
+   "interest": 41.61,
+   "intensity": 64.86,
+   "controversy": 0.21,
+   "net": 0.58,
+   "n": 2412,
+   "share": 0.09,
+   "rank_lo": 3,
+   "rank_hi": 4,
+   "favor_lo": 54.08,
+   "favor_hi": 57.16,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.12,
+   "examples": [
+    "진짜 수영은 정경호랑헤어진시기에 이거해서 너무 다행이다 생각함",
+    "와 수영이 이쁜거 봐라"
+   ]
+  },
+  {
+   "rank": 5,
+   "name": "태연",
+   "favor": 52.43,
+   "interest": 35.12,
+   "intensity": 51.92,
+   "controversy": 0.26,
+   "net": 0.48,
+   "n": 2036,
+   "share": 0.18,
+   "rank_lo": 5,
+   "rank_hi": 6,
+   "favor_lo": 50.19,
+   "favor_hi": 54.59,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.1,
+   "examples": [
+    "태연이 돌아와서 행복한 사람들은 손💜💜💜",
+    "태연아 와 미쳤다 .."
+   ]
+  },
+  {
+   "rank": 6,
+   "name": "써니",
+   "favor": 50.64,
+   "interest": 37.59,
+   "intensity": 53.17,
+   "controversy": 0.28,
+   "net": 0.44,
+   "n": 2179,
+   "share": 0.14,
+   "rank_lo": 5,
+   "rank_hi": 6,
+   "favor_lo": 48.55,
+   "favor_hi": 52.59,
+   "low_sample": false,
+   "quadrant": "화제성",
+   "mention_share": 0.11,
+   "examples": [
+    "써니가 애들의 정신적 지주가 될듯 보는내내 애들 예뻐해주고 그래서 보는 내가 다 기분좋아졌다ㅠㅠ",
+    "탱구랑 써니 반응 너무 재밌어 ㅋㅋ"
+   ]
+  },
+  {
+   "rank": 7,
+   "name": "서현",
+   "favor": 36.86,
+   "interest": 4.09,
+   "intensity": 50.33,
+   "controversy": 0.27,
+   "net": 0.46,
+   "n": 237,
+   "share": 0.02,
+   "rank_lo": 7,
+   "rank_hi": 8,
+   "favor_lo": 32.8,
+   "favor_hi": 40.53,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.01,
+   "examples": [
+    "진짜 서현 첼로하는 전교회장같은 이미지였음 엄청 이뻐서 유명한 엄친딸 이미지",
+    "경청하는 동생 주현 넘 귀엽다"
+   ]
+  },
+  {
+   "rank": 8,
+   "name": "티파니 영",
+   "favor": 34.09,
+   "interest": 1.33,
+   "intensity": 48.42,
+   "controversy": 0.3,
+   "net": 0.4,
+   "n": 77,
+   "share": 0.0,
+   "rank_lo": 7,
+   "rank_hi": 8,
+   "favor_lo": 30.86,
+   "favor_hi": 37.2,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.0,
+   "examples": [
+    "Tiffany so pretty love you ❤",
+    "Tiffany so pretty❤"
+   ]
+  }
+ ],
+ "by_source": {
+  "dcinside": {
+   "n": 1133,
+   "pos_ratio": 0.34,
+   "net": 0.07,
+   "controversy": 0.47
+  },
+  "youtube": {
+   "n": 33358,
+   "pos_ratio": 0.57,
+   "net": 0.5,
+   "controversy": 0.25
+  }
+ },
+ "history": [
+  {
+   "date": "2026-11-19",
+   "favor": 54.88,
+   "interest": 69.87,
+   "mentions_per_day": 383.23,
+   "members": {
+    "효연": 74.76,
+    "유리": 61.64,
+    "윤아": 56.45,
+    "수영": 55.6,
+    "태연": 52.43,
+    "써니": 50.64,
+    "서현": 36.86,
+    "티파니 영": 34.09
+   }
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+# 자동 생성됨 (출처: wikidata:Q20153). 멤버/별칭/갤러리가 틀리면 직접 고쳐도 됩니다.
+# 다시 만들려면: python main.py setup "소녀시대" --refresh
+group:
+  name: 소녀시대
+  aliases:
+  - 소녀시대
+  - Girls' Generation
+  - 소시
+  - Girls Generation
+  - So nyeo shsi dae
+  - SNSD
+members:
+  써니:
+    aliases:
+    - 써니
+    - Sunny
+    - 이순규
+    - 순규
+    - Lee Soon-kyu
+    - Susan Soonkyu Lee
+    exclude_patterns:
+    - 써니까
+    - 써니깐
+    - 써니\s*\?
+  효연:
+    aliases:
+    - 효연
+    - Kim Hyo-yeon
+    - HYO
+    - Kim Hyoyeon
+    - Kim Hyo-yun
+    - Kim Hyoyun
+    - Kim Hyo Yun
+    - Hyoyeon
+    - Kim Hyo Yeon
+    - DJ Hyo
+  유리:
+    aliases:
+    - 유리
+    - Kwon Yu-ri
+    - 권유리
+    - Kwon-Yu-ri
+    - Kwon Yu Ri
+    - Kwon Yoori
+    - Kwon Yoo-ri
+    - Kwon Yoo Ri
+    - Yuri
+    - Kwon Yuri
+  수영:
+    aliases:
+    - 수영
+    - Sooyoung
+    - 최수영
+    - Choi Soo-young
+    - Choi Sooyoung
+    - Soo-young
+    - Suyoung
+    - Su-young
+    - Soo Young
+    - Su Young
+    - Choi Suyoung
+    - Choi Su-young
+    - Choi Su Young
+    - Soo-young Choi
+    - Sooyoung Choi
+    - Soo Young Choi
+    - Su Young Choi
+    - Su-young Choi
+    - Suyoung Choi
+  태연:
+    aliases:
+    - 태연
+    - Taeyeon
+    - Kim Tae-yeon
+  윤아:
+    aliases:
+    - 윤아
+    - Lim Yoona
+    - 임윤아
+    - Im Yoo-na
+    - Im Yoo Na
+    - Im Yuna
+    - Im Yun-a
+    - Im Yun A
+    - Im Yoonah
+    - Im Yoon Ah
+    - Im Yun-ah
+    - Yoona Lim
+    - Yoona
+  티파니 영:
+    aliases:
+    - 티파니 영
+    - Tiffany Young
+    - 스테퍼니 황
+    - 스테파니 황
+    - 황미영
+    - 미영
+    - Stephanie Hwang
+    - Tiffany Hwang
+    - Hwang Mi-yeong
+    - Tiffany
+  서현:
+    aliases:
+    - 서현
+    - Seo Joo-hyun
+    - 서주현
+    - 주현
+    - Seo Ju-hyun
+    - Seohyun
+youtube:
+  queries: []
+  channel_ids: []
+dcinside:
+  galleries:
+  - id: girlsgeneration_new
+    type: main
+    mode: list
+    name: 소녀시대
