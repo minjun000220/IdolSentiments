@@ -8,19 +8,19 @@
     "아이브",
     "Ive"
    ],
-   "updated_at": "2026-11-20T01:52:52Z",
-   "favor": 62.85,
-   "interest": 67.18,
+   "updated_at": "2026-11-21T00:57:16Z",
+   "favor": 63.47,
+   "interest": 68.01,
    "members": [
     "유진",
     "리즈",
-    "원영",
     "이서",
+    "원영",
     "가을",
     "나오이 레이"
    ],
    "top_member": "유진",
-   "mentions": 27400
+   "mentions": 29422
   },
   {
    "key": "newjeans",
@@ -32,18 +32,18 @@
     "NJZ",
     "엔제이지"
    ],
-   "updated_at": "2026-11-20T02:08:22Z",
-   "favor": 44.54,
-   "interest": 67.95,
+   "updated_at": "2026-11-21T01:11:24Z",
+   "favor": 44.05,
+   "interest": 68.32,
    "members": [
     "해린",
     "민지",
-    "다니엘",
     "혜인",
+    "다니엘",
     "하니"
    ],
    "top_member": "해린",
-   "mentions": 29273
+   "mentions": 30219
   },
   {
    "key": "리센느",
@@ -52,9 +52,9 @@
     "리센느",
     "RESCENE"
    ],
-   "updated_at": "2026-11-20T02:30:54Z",
-   "favor": 60.02,
-   "interest": 73.02,
+   "updated_at": "2026-11-21T02:03:56Z",
+   "favor": 61.97,
+   "interest": 77.82,
    "members": [
     "미나미",
     "리브",
@@ -63,7 +63,7 @@
     "제나"
    ],
    "top_member": "미나미",
-   "mentions": 45128
+   "mentions": 67937
   },
   {
    "key": "bts",
@@ -74,20 +74,20 @@
     "防彈少年團",
     "비티에스"
    ],
-   "updated_at": "2026-11-20T01:00:19Z",
-   "favor": 57.07,
-   "interest": 70.06,
+   "updated_at": "2026-11-21T00:20:35Z",
+   "favor": 58.77,
+   "interest": 72.23,
    "members": [
-    "진",
     "뷔",
+    "진",
     "지민",
-    "제이홉",
     "RM",
+    "제이홉",
     "정국",
     "슈가"
    ],
-   "top_member": "진",
-   "mentions": 35049
+   "top_member": "뷔",
+   "mentions": 42174
   },
   {
    "key": "girlsgeneration",
@@ -100,9 +100,9 @@
     "So nyeo shsi dae",
     "SNSD"
    ],
-   "updated_at": "2026-11-20T01:14:41Z",
-   "favor": 54.67,
-   "interest": 71.43,
+   "updated_at": "2026-11-21T00:32:55Z",
+   "favor": 54.79,
+   "interest": 71.5,
    "members": [
     "효연",
     "유리",
@@ -114,7 +114,7 @@
     "서현"
    ],
    "top_member": "효연",
-   "mentions": 39383
+   "mentions": 39622
   },
   {
    "key": "illit",
@@ -125,9 +125,9 @@
     "ILL-IT",
     "I'll-It"
    ],
-   "updated_at": "2026-11-20T01:50:10Z",
-   "favor": 58.91,
-   "interest": 71.85,
+   "updated_at": "2026-11-21T00:55:55Z",
+   "favor": 59.16,
+   "interest": 72.49,
    "members": [
     "원희",
     "윤아",
@@ -136,7 +136,7 @@
     "모카"
    ],
    "top_member": "원희",
-   "mentions": 40840
+   "mentions": 43115
   }
  ]
 }

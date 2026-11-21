@@ -5,66 +5,66 @@
   "리센느",
   "RESCENE"
  ],
- "updated_at": "2026-11-20T02:30:54Z",
+ "updated_at": "2026-11-21T02:03:56Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 41148,
-  "sentences": 56284,
-  "mentions": 45128
+  "docs": 61336,
+  "sentences": 84223,
+  "mentions": 67937
  },
  "group": {
-  "favor": 60.02,
-  "favor_direct": 54.18,
-  "favor_members": 65.87,
-  "controversy": 0.27,
-  "net": 0.45,
-  "energy": 33778.03,
-  "n": 45128.0,
-  "n_direct": 14214.0,
-  "interest": 73.02,
-  "mentions_per_day": 501.42
+  "favor": 61.97,
+  "favor_direct": 58.72,
+  "favor_members": 65.21,
+  "controversy": 0.25,
+  "net": 0.5,
+  "energy": 51339.16,
+  "n": 67937.0,
+  "n_direct": 24610.0,
+  "interest": 77.82,
+  "mentions_per_day": 754.86
  },
  "members": [
   {
    "rank": 1,
    "name": "미나미",
-   "favor": 74.19,
-   "interest": 67.44,
-   "intensity": 64.81,
+   "favor": 74.92,
+   "interest": 79.02,
+   "intensity": 64.16,
    "controversy": 0.22,
    "net": 0.56,
-   "n": 6624,
-   "share": 0.25,
+   "n": 10702,
+   "share": 0.29,
    "rank_lo": 1,
    "rank_hi": 1,
-   "favor_lo": 72.81,
-   "favor_hi": 75.68,
+   "favor_lo": 74.34,
+   "favor_hi": 75.54,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.21,
+   "mention_share": 0.25,
    "examples": [
     "미나미는 진짜 엄마가 교육을 잘 한거 같음",
-    "미나미 괜찮아 보여서 다행이다"
+    "미나미보면 참 교양있다고 생각했는데"
    ]
   },
   {
    "rank": 2,
    "name": "리브",
-   "favor": 71.75,
-   "interest": 59.98,
-   "intensity": 70.34,
-   "controversy": 0.17,
-   "net": 0.66,
-   "n": 5891,
-   "share": 0.18,
+   "favor": 66.01,
+   "interest": 62.55,
+   "intensity": 69.03,
+   "controversy": 0.18,
+   "net": 0.63,
+   "n": 8471,
+   "share": 0.16,
    "rank_lo": 2,
-   "rank_hi": 2,
-   "favor_lo": 70.22,
-   "favor_hi": 73.06,
+   "rank_hi": 3,
+   "favor_lo": 64.73,
+   "favor_hi": 67.15,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.19,
+   "mention_share": 0.2,
    "examples": [
     "와…노래 진짜 높다…ㅈㄴ높네진짜…어케부르냐 저거 와 리브가 진짜 잘부른다….",
     "리브 너무 잘부름.."
@@ -73,82 +73,82 @@
   {
    "rank": 3,
    "name": "원이",
-   "favor": 64.41,
+   "favor": 64.39,
    "interest": 100.0,
-   "intensity": 49.16,
-   "controversy": 0.38,
-   "net": 0.24,
-   "n": 9822,
+   "intensity": 51.58,
+   "controversy": 0.35,
+   "net": 0.29,
+   "n": 13543,
    "share": 0.34,
-   "rank_lo": 3,
+   "rank_lo": 2,
    "rank_hi": 3,
-   "favor_lo": 63.69,
-   "favor_hi": 65.03,
+   "favor_lo": 63.14,
+   "favor_hi": 65.76,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.32,
+   "mention_share": 0.31,
    "examples": [
-    "와 원이 썸네일 너무예뻐서 헛웃음 나옴",
-    "자식 키우는 입장에서 원이도 한없이 사랑 스러울 듯."
+    "원이는 리더로서 통제확실하고",
+    "무대를 보면서 감동이 벅차오르더니 원이의 눈에 고인 눈물을 본 순간 나도 펑펑 울어버렸다."
    ]
   },
   {
    "rank": 4,
    "name": "메이",
-   "favor": 56.62,
-   "interest": 41.72,
-   "intensity": 61.14,
-   "controversy": 0.26,
-   "net": 0.47,
-   "n": 4098,
-   "share": 0.13,
+   "favor": 53.99,
+   "interest": 37.75,
+   "intensity": 60.48,
+   "controversy": 0.27,
+   "net": 0.46,
+   "n": 5113,
+   "share": 0.12,
    "rank_lo": 4,
    "rank_hi": 4,
-   "favor_lo": 55.24,
-   "favor_hi": 57.75,
+   "favor_lo": 52.93,
+   "favor_hi": 55.09,
    "low_sample": false,
    "quadrant": "관심 부족",
-   "mention_share": 0.13,
+   "mention_share": 0.12,
    "examples": [
     "메이 표정 ㅋㅋ",
-    "메이 표정 뿌듯해보인다"
+    "종알종알 메이 너무 귀여워"
    ]
   },
   {
    "rank": 5,
    "name": "제나",
-   "favor": 50.87,
-   "interest": 45.6,
-   "intensity": 58.23,
-   "controversy": 0.25,
-   "net": 0.5,
-   "n": 4479,
-   "share": 0.1,
+   "favor": 50.51,
+   "interest": 40.6,
+   "intensity": 59.81,
+   "controversy": 0.24,
+   "net": 0.53,
+   "n": 5498,
+   "share": 0.09,
    "rank_lo": 5,
    "rank_hi": 5,
-   "favor_lo": 49.62,
-   "favor_hi": 52.04,
+   "favor_lo": 49.23,
+   "favor_hi": 51.61,
    "low_sample": false,
    "quadrant": "관심 부족",
-   "mention_share": 0.14,
+   "mention_share": 0.13,
    "examples": [
-    "근데 제나가 진짜 귀엽긴함 사랑받을만함",
-    "제나는 착하고 애교 덩어리"
+    "의외로 제일 라이브 탄탄한건 제나인 것 같음 ㅋㅋ",
+    "생각보다 제나가 너무 잘부르는데..?"
    ]
   }
  ],
  "by_source": {
   "dcinside": {
-   "n": 2077,
-   "pos_ratio": 0.39,
-   "net": 0.32,
+   "n": 3058,
+   "pos_ratio": 0.4,
+   "net": 0.33,
    "controversy": 0.34
   },
   "youtube": {
-   "n": 43051,
-   "pos_ratio": 0.58,
-   "net": 0.46,
-   "controversy": 0.27
+   "n": 64879,
+   "pos_ratio": 0.6,
+   "net": 0.5,
+   "controversy": 0.25
   }
  },
  "history": [
@@ -189,6 +189,19 @@
     "원이": 64.41,
     "메이": 56.62,
     "제나": 50.87
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "favor": 61.97,
+   "interest": 77.82,
+   "mentions_per_day": 754.86,
+   "members": {
+    "미나미": 74.92,
+    "리브": 66.01,
+    "원이": 64.39,
+    "메이": 53.99,
+    "제나": 50.51
    }
   }
  ]
