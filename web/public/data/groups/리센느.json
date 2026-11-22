@@ -5,44 +5,44 @@
   "리센느",
   "RESCENE"
  ],
- "updated_at": "2026-11-21T02:03:56Z",
+ "updated_at": "2026-11-22T01:23:01Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 61336,
-  "sentences": 84223,
-  "mentions": 67937
+  "docs": 71941,
+  "sentences": 98913,
+  "mentions": 79644
  },
  "group": {
-  "favor": 61.97,
+  "favor": 62.24,
   "favor_direct": 58.72,
-  "favor_members": 65.21,
+  "favor_members": 65.75,
   "controversy": 0.25,
   "net": 0.5,
-  "energy": 51339.16,
-  "n": 67937.0,
-  "n_direct": 24610.0,
-  "interest": 77.82,
-  "mentions_per_day": 754.86
+  "energy": 58630.36,
+  "n": 79644.0,
+  "n_direct": 31219.0,
+  "interest": 79.68,
+  "mentions_per_day": 884.93
  },
  "members": [
   {
    "rank": 1,
    "name": "미나미",
-   "favor": 74.92,
-   "interest": 79.02,
-   "intensity": 64.16,
+   "favor": 74.96,
+   "interest": 74.56,
+   "intensity": 64.23,
    "controversy": 0.22,
    "net": 0.56,
-   "n": 10702,
-   "share": 0.29,
+   "n": 11637,
+   "share": 0.28,
    "rank_lo": 1,
    "rank_hi": 1,
-   "favor_lo": 74.34,
-   "favor_hi": 75.54,
+   "favor_lo": 73.72,
+   "favor_hi": 75.48,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.25,
+   "mention_share": 0.24,
    "examples": [
     "미나미는 진짜 엄마가 교육을 잘 한거 같음",
     "미나미보면 참 교양있다고 생각했는데"
@@ -50,62 +50,62 @@
   },
   {
    "rank": 2,
+   "name": "원이",
+   "favor": 66.09,
+   "interest": 100.0,
+   "intensity": 51.99,
+   "controversy": 0.35,
+   "net": 0.31,
+   "n": 15608,
+   "share": 0.35,
+   "rank_lo": 2,
+   "rank_hi": 3,
+   "favor_lo": 64.68,
+   "favor_hi": 66.92,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.32,
+   "examples": [
+    "원이는 리더로서 통제확실하고",
+    "원이 진짜 너무 귀엽다"
+   ]
+  },
+  {
+   "rank": 3,
    "name": "리브",
-   "favor": 66.01,
-   "interest": 62.55,
-   "intensity": 69.03,
-   "controversy": 0.18,
-   "net": 0.63,
-   "n": 8471,
+   "favor": 65.63,
+   "interest": 59.39,
+   "intensity": 68.36,
+   "controversy": 0.19,
+   "net": 0.62,
+   "n": 9269,
    "share": 0.16,
    "rank_lo": 2,
    "rank_hi": 3,
-   "favor_lo": 64.73,
-   "favor_hi": 67.15,
+   "favor_lo": 64.47,
+   "favor_hi": 66.72,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.2,
+   "mention_share": 0.19,
    "examples": [
     "와…노래 진짜 높다…ㅈㄴ높네진짜…어케부르냐 저거 와 리브가 진짜 잘부른다….",
     "리브 너무 잘부름.."
    ]
   },
   {
-   "rank": 3,
-   "name": "원이",
-   "favor": 64.39,
-   "interest": 100.0,
-   "intensity": 51.58,
-   "controversy": 0.35,
-   "net": 0.29,
-   "n": 13543,
-   "share": 0.34,
-   "rank_lo": 2,
-   "rank_hi": 3,
-   "favor_lo": 63.14,
-   "favor_hi": 65.76,
-   "low_sample": false,
-   "quadrant": "인기",
-   "mention_share": 0.31,
-   "examples": [
-    "원이는 리더로서 통제확실하고",
-    "무대를 보면서 감동이 벅차오르더니 원이의 눈에 고인 눈물을 본 순간 나도 펑펑 울어버렸다."
-   ]
-  },
-  {
    "rank": 4,
    "name": "메이",
-   "favor": 53.99,
-   "interest": 37.75,
-   "intensity": 60.48,
+   "favor": 54.55,
+   "interest": 37.92,
+   "intensity": 60.83,
    "controversy": 0.27,
    "net": 0.46,
-   "n": 5113,
+   "n": 5919,
    "share": 0.12,
    "rank_lo": 4,
    "rank_hi": 4,
-   "favor_lo": 52.93,
-   "favor_hi": 55.09,
+   "favor_lo": 53.52,
+   "favor_hi": 55.43,
    "low_sample": false,
    "quadrant": "관심 부족",
    "mention_share": 0.12,
@@ -117,20 +117,20 @@
   {
    "rank": 5,
    "name": "제나",
-   "favor": 50.51,
-   "interest": 40.6,
-   "intensity": 59.81,
+   "favor": 50.62,
+   "interest": 38.39,
+   "intensity": 59.61,
    "controversy": 0.24,
-   "net": 0.53,
-   "n": 5498,
+   "net": 0.52,
+   "n": 5992,
    "share": 0.09,
    "rank_lo": 5,
    "rank_hi": 5,
-   "favor_lo": 49.23,
-   "favor_hi": 51.61,
+   "favor_lo": 49.47,
+   "favor_hi": 51.65,
    "low_sample": false,
    "quadrant": "관심 부족",
-   "mention_share": 0.13,
+   "mention_share": 0.12,
    "examples": [
     "의외로 제일 라이브 탄탄한건 제나인 것 같음 ㅋㅋ",
     "생각보다 제나가 너무 잘부르는데..?"
@@ -139,13 +139,13 @@
  ],
  "by_source": {
   "dcinside": {
-   "n": 3058,
+   "n": 3941,
    "pos_ratio": 0.4,
    "net": 0.33,
    "controversy": 0.34
   },
   "youtube": {
-   "n": 64879,
+   "n": 75703,
    "pos_ratio": 0.6,
    "net": 0.5,
    "controversy": 0.25
@@ -202,6 +202,19 @@
     "원이": 64.39,
     "메이": 53.99,
     "제나": 50.51
+   }
+  },
+  {
+   "date": "2026-11-22",
+   "favor": 62.24,
+   "interest": 79.68,
+   "mentions_per_day": 884.93,
+   "members": {
+    "미나미": 74.96,
+    "원이": 66.09,
+    "리브": 65.63,
+    "메이": 54.55,
+    "제나": 50.62
    }
   }
  ]

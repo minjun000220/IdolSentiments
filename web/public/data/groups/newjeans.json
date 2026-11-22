@@ -8,44 +8,44 @@
   "NJZ",
   "엔제이지"
  ],
- "updated_at": "2026-11-21T01:11:24Z",
+ "updated_at": "2026-11-22T00:38:30Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 26930,
-  "sentences": 39138,
-  "mentions": 30219
+  "docs": 28847,
+  "sentences": 42112,
+  "mentions": 32582
  },
  "group": {
-  "favor": 44.05,
-  "favor_direct": 31.05,
-  "favor_members": 57.06,
+  "favor": 44.55,
+  "favor_direct": 30.99,
+  "favor_members": 58.1,
   "controversy": 0.47,
   "net": 0.05,
-  "energy": 11667.89,
-  "n": 30219.0,
-  "n_direct": 18953.0,
-  "interest": 68.32,
-  "mentions_per_day": 335.77
+  "energy": 12846.58,
+  "n": 32582.0,
+  "n_direct": 21015.0,
+  "interest": 69.21,
+  "mentions_per_day": 362.02
  },
  "members": [
   {
    "rank": 1,
    "name": "해린",
-   "favor": 71.96,
+   "favor": 71.89,
    "interest": 100.0,
-   "intensity": 59.94,
+   "intensity": 59.85,
    "controversy": 0.26,
    "net": 0.48,
-   "n": 3783,
-   "share": 0.27,
+   "n": 3853,
+   "share": 0.26,
    "rank_lo": 1,
    "rank_hi": 1,
-   "favor_lo": 70.95,
-   "favor_hi": 73.09,
+   "favor_lo": 70.63,
+   "favor_hi": 73.26,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.34,
+   "mention_share": 0.33,
    "examples": [
     "나는 강해린입꼬리가 너무좋아...",
     "난 진짜…아무리 봐도 해린이 여돌중에 제일 예쁜 것 같음 ..(개인의견이니까토달지마셈)"
@@ -54,17 +54,17 @@
   {
    "rank": 2,
    "name": "민지",
-   "favor": 57.58,
-   "interest": 35.0,
-   "intensity": 58.6,
-   "controversy": 0.29,
-   "net": 0.42,
-   "n": 1324,
+   "favor": 58.99,
+   "interest": 35.45,
+   "intensity": 59.16,
+   "controversy": 0.28,
+   "net": 0.44,
+   "n": 1366,
    "share": 0.15,
    "rank_lo": 2,
-   "rank_hi": 3,
-   "favor_lo": 54.34,
-   "favor_hi": 61.4,
+   "rank_hi": 2,
+   "favor_lo": 55.25,
+   "favor_hi": 62.25,
    "low_sample": false,
    "quadrant": "조용한 호감",
    "mention_share": 0.12,
@@ -76,79 +76,79 @@
   {
    "rank": 3,
    "name": "혜인",
-   "favor": 53.61,
-   "interest": 51.68,
-   "intensity": 56.75,
+   "favor": 54.3,
+   "interest": 51.65,
+   "intensity": 55.72,
    "controversy": 0.29,
    "net": 0.41,
-   "n": 1955,
-   "share": 0.13,
-   "rank_lo": 2,
+   "n": 1990,
+   "share": 0.14,
+   "rank_lo": 3,
    "rank_hi": 4,
-   "favor_lo": 51.06,
-   "favor_hi": 56.31,
+   "favor_lo": 51.83,
+   "favor_hi": 56.86,
    "low_sample": false,
    "quadrant": "인기",
    "mention_share": 0.17,
    "examples": [
-    "혜인이 너무 예뻐진거 봐라...ㅜㅜ 제일 막내여서 계속 성장할수록 예쁘고 분위기먹고있는데 활동도 못하는게 너",
-    "Hyein is so ethereal omg"
+    "Hyein is so adorable 🥹❤",
+    "hyein so cute 🥰🥰"
    ]
   },
   {
    "rank": 4,
    "name": "다니엘",
-   "favor": 51.57,
-   "interest": 96.09,
-   "intensity": 38.39,
+   "favor": 54.15,
+   "interest": 97.72,
+   "intensity": 38.31,
    "controversy": 0.47,
-   "net": 0.06,
-   "n": 3635,
-   "share": 0.35,
+   "net": 0.05,
+   "n": 3765,
+   "share": 0.37,
    "rank_lo": 3,
    "rank_hi": 4,
-   "favor_lo": 48.66,
-   "favor_hi": 54.81,
+   "favor_lo": 50.91,
+   "favor_hi": 57.12,
    "low_sample": false,
    "quadrant": "논란 중심",
-   "mention_share": 0.32,
+   "mention_share": 0.33,
    "examples": [
     "다니엘 항상 응원할게.",
-    "나 버니즈는 아닌데 다니엘 저번 데모 때도 느꼇지만 작곡,작사 능력치가 기대이상이라고 느낌"
+    "Danielle's expression and posture got me 😮😭"
    ]
   },
   {
    "rank": 5,
    "name": "하니",
-   "favor": 37.38,
-   "interest": 15.04,
-   "intensity": 43.3,
-   "controversy": 0.42,
-   "net": 0.16,
-   "n": 569,
+   "favor": 39.07,
+   "interest": 15.39,
+   "intensity": 44.72,
+   "controversy": 0.41,
+   "net": 0.19,
+   "n": 593,
    "share": 0.09,
    "rank_lo": 5,
    "rank_hi": 5,
-   "favor_lo": 34.45,
-   "favor_hi": 40.82,
+   "favor_lo": 35.12,
+   "favor_hi": 42.69,
    "low_sample": false,
    "quadrant": "관심 부족",
    "mention_share": 0.05,
    "examples": [
-    "Hanni being the youngest, they are so cute.",
-    "햇살여주라는 말은 진짜 하니씨를 위해 존재하는 거 같음…너무 예쁘네요…,,"
+    "하니 머리 너무 귀엽다ㅠㅋㅋ",
+    "Hanni being the youngest, they are so cute."
    ]
   }
  ],
  "by_source": {
   "dcinside": {
-   "n": 563,
+   "n": 578,
    "pos_ratio": 0.39,
    "net": 0.3,
    "controversy": 0.35
   },
   "youtube": {
-   "n": 29656,
+   "n": 32004,
    "pos_ratio": 0.36,
    "net": 0.05,
    "controversy": 0.48
@@ -205,6 +205,19 @@
     "혜인": 53.61,
     "다니엘": 51.57,
     "하니": 37.38
+   }
+  },
+  {
+   "date": "2026-11-22",
+   "favor": 44.55,
+   "interest": 69.21,
+   "mentions_per_day": 362.02,
+   "members": {
+    "해린": 71.89,
+    "민지": 58.99,
+    "혜인": 54.3,
+    "다니엘": 54.15,
+    "하니": 39.07
    }
   }
  ]

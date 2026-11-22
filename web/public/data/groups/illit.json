@@ -7,41 +7,41 @@
   "ILL-IT",
   "I'll-It"
  ],
- "updated_at": "2026-11-21T00:55:55Z",
+ "updated_at": "2026-11-22T00:18:55Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 43577,
-  "sentences": 52337,
-  "mentions": 43115
+  "docs": 50542,
+  "sentences": 60656,
+  "mentions": 49850
  },
  "group": {
-  "favor": 59.16,
-  "favor_direct": 56.85,
-  "favor_members": 61.46,
+  "favor": 58.7,
+  "favor_direct": 56.32,
+  "favor_members": 61.08,
   "controversy": 0.24,
-  "net": 0.53,
-  "energy": 31350.65,
-  "n": 43115.0,
-  "n_direct": 23442.0,
-  "interest": 72.49,
-  "mentions_per_day": 479.06
+  "net": 0.52,
+  "energy": 34630.29,
+  "n": 49850.0,
+  "n_direct": 26954.0,
+  "interest": 74.19,
+  "mentions_per_day": 553.89
  },
  "members": [
   {
    "rank": 1,
    "name": "원희",
-   "favor": 75.5,
+   "favor": 75.35,
    "interest": 100.0,
-   "intensity": 64.99,
+   "intensity": 64.79,
    "controversy": 0.2,
-   "net": 0.6,
-   "n": 6625,
+   "net": 0.59,
+   "n": 7761,
    "share": 0.36,
    "rank_lo": 1,
    "rank_hi": 1,
-   "favor_lo": 74.77,
-   "favor_hi": 76.2,
+   "favor_lo": 74.63,
+   "favor_hi": 76.03,
    "low_sample": false,
    "quadrant": "인기",
    "mention_share": 0.34,
@@ -52,65 +52,65 @@
   },
   {
    "rank": 2,
-   "name": "윤아",
-   "favor": 59.65,
-   "interest": 46.58,
-   "intensity": 62.97,
-   "controversy": 0.21,
-   "net": 0.58,
-   "n": 3086,
-   "share": 0.19,
+   "name": "민주",
+   "favor": 58.25,
+   "interest": 66.22,
+   "intensity": 61.27,
+   "controversy": 0.24,
+   "net": 0.53,
+   "n": 5139,
+   "share": 0.2,
    "rank_lo": 2,
    "rank_hi": 3,
-   "favor_lo": 58.07,
-   "favor_hi": 61.22,
+   "favor_lo": 56.88,
+   "favor_hi": 59.65,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.22,
+   "examples": [
+    "민주 무대 끝나고 털썩 주저앉는거 보고 무대를 얼마나 진심으로하는지 느껴져서 또입덕함…",
+    "민주 표정 너무 잘 쓰고"
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "윤아",
+   "favor": 58.13,
+   "interest": 43.24,
+   "intensity": 62.35,
+   "controversy": 0.21,
+   "net": 0.58,
+   "n": 3356,
+   "share": 0.18,
+   "rank_lo": 2,
+   "rank_hi": 3,
+   "favor_lo": 56.51,
+   "favor_hi": 59.7,
    "low_sample": false,
    "quadrant": "조용한 호감",
-   "mention_share": 0.16,
+   "mention_share": 0.15,
    "examples": [
     "윤아 개웃기네ㅠㅠㅋㅋ",
     "영지 성호 운학 조합 보려고 틀었다가 노윤아 팬클럽+1 성격 정말정말 좋고 영상 내내 어색함 하나도 안 느껴"
    ]
   },
   {
-   "rank": 3,
-   "name": "민주",
-   "favor": 58.71,
-   "interest": 60.92,
-   "intensity": 62.3,
-   "controversy": 0.23,
-   "net": 0.55,
-   "n": 4036,
-   "share": 0.19,
-   "rank_lo": 2,
-   "rank_hi": 3,
-   "favor_lo": 57.26,
-   "favor_hi": 60.17,
-   "low_sample": false,
-   "quadrant": "인기",
-   "mention_share": 0.21,
-   "examples": [
-    "민주 미모 미쳤네...",
-    "민주 존예존잘미 있음"
-   ]
-  },
-  {
    "rank": 4,
    "name": "이로하",
-   "favor": 50.27,
-   "interest": 34.28,
-   "intensity": 60.1,
+   "favor": 50.38,
+   "interest": 33.15,
+   "intensity": 60.36,
    "controversy": 0.23,
    "net": 0.54,
-   "n": 2271,
+   "n": 2573,
    "share": 0.11,
    "rank_lo": 4,
    "rank_hi": 4,
-   "favor_lo": 48.53,
-   "favor_hi": 51.89,
+   "favor_lo": 48.88,
+   "favor_hi": 52.02,
    "low_sample": false,
    "quadrant": "관심 부족",
-   "mention_share": 0.12,
+   "mention_share": 0.11,
    "examples": [
     "이로하는 말투는 엄청귀여운데 춤추면 미친거같고 또 은근히 보컬도 너무좋아지고있고",
     "다 겁나 이쁜데 로하 뭐야 레전드잖아?"
@@ -119,37 +119,37 @@
   {
    "rank": 5,
    "name": "모카",
-   "favor": 42.02,
-   "interest": 55.17,
-   "intensity": 46.85,
+   "favor": 41.98,
+   "interest": 52.4,
+   "intensity": 46.79,
    "controversy": 0.34,
    "net": 0.33,
-   "n": 3655,
+   "n": 4067,
    "share": 0.15,
    "rank_lo": 5,
    "rank_hi": 5,
-   "favor_lo": 40.32,
-   "favor_hi": 43.52,
+   "favor_lo": 40.61,
+   "favor_hi": 43.29,
    "low_sample": false,
    "quadrant": "화제성",
-   "mention_share": 0.19,
+   "mention_share": 0.18,
    "examples": [
     "진심 개잘했음 감탄나옴 모카도 있었음 더 좋았을텐데ㅠㅠ",
-    "다들 모카가 복귀했을때 더 감싸줄수있게 멤버들이 더 열심히 성장하려고 한거같은 느낌을 받았음 1-2년동안"
+    "우리릿 원래도 무대 잘 했지만 아바미 잇츠미 쩨뽀하겠어까지 컨셉도 더 넓어지고 이렇게 큰 무대에서도 에너지 "
    ]
   }
  ],
  "by_source": {
   "dcinside": {
-   "n": 3707,
-   "pos_ratio": 0.4,
-   "net": 0.29,
-   "controversy": 0.36
+   "n": 4803,
+   "pos_ratio": 0.39,
+   "net": 0.27,
+   "controversy": 0.37
   },
   "youtube": {
-   "n": 39408,
+   "n": 45047,
    "pos_ratio": 0.59,
-   "net": 0.54,
+   "net": 0.53,
    "controversy": 0.23
   }
  },
@@ -204,6 +204,19 @@
     "민주": 58.71,
     "이로하": 50.27,
     "모카": 42.02
+   }
+  },
+  {
+   "date": "2026-11-22",
+   "favor": 58.7,
+   "interest": 74.19,
+   "mentions_per_day": 553.89,
+   "members": {
+    "원희": 75.35,
+    "민주": 58.25,
+    "윤아": 58.13,
+    "이로하": 50.38,
+    "모카": 41.98
    }
   }
  ]
