@@ -7,110 +7,110 @@
   "防彈少年團",
   "비티에스"
  ],
- "updated_at": "2026-11-21T23:27:30Z",
+ "updated_at": "2026-11-22T23:49:43Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 44312,
-  "sentences": 56234,
-  "mentions": 46468
+  "docs": 48382,
+  "sentences": 61277,
+  "mentions": 51461
  },
  "group": {
-  "favor": 58.93,
-  "favor_direct": 52.11,
-  "favor_members": 65.74,
+  "favor": 58.82,
+  "favor_direct": 51.86,
+  "favor_members": 65.77,
   "controversy": 0.24,
-  "net": 0.53,
-  "energy": 26649.81,
-  "n": 46468.0,
-  "n_direct": 17427.0,
-  "interest": 73.36,
-  "mentions_per_day": 516.31
+  "net": 0.51,
+  "energy": 30977.95,
+  "n": 51461.0,
+  "n_direct": 19188.0,
+  "interest": 74.56,
+  "mentions_per_day": 571.79
  },
  "members": [
   {
    "rank": 1,
-   "name": "진",
-   "favor": 72.39,
-   "interest": 82.7,
-   "intensity": 60.56,
-   "controversy": 0.24,
-   "net": 0.52,
-   "n": 5080,
-   "share": 0.22,
+   "name": "지민",
+   "favor": 72.71,
+   "interest": 74.44,
+   "intensity": 61.02,
+   "controversy": 0.25,
+   "net": 0.51,
+   "n": 4757,
+   "share": 0.21,
    "rank_lo": 1,
    "rank_hi": 3,
-   "favor_lo": 71.46,
-   "favor_hi": 73.15,
+   "favor_lo": 71.54,
+   "favor_hi": 73.52,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.17,
+   "mention_share": 0.15,
    "examples": [
-    "진 솔콘 직관한 팬들 하나같이 진의 풍부한 성량과 호소력 깊은 음색에 섬세한 감정 전달까지 몰입도 최고라고 ",
-    "석진이가 우리에게 보여준 모습들은 이미 기준치 초과야 덕분에 정말 행복했고 앞으로도 오래 오래 함께 했으면 "
+    "너무 귀하다 박지민",
+    "귀하다귀해 테토상남잔데 안정형이고 팬한테 다정하고 손편지 써주는 박지민!!!"
    ]
   },
   {
    "rank": 2,
-   "name": "뷔",
-   "favor": 72.09,
-   "interest": 63.57,
-   "intensity": 63.62,
-   "controversy": 0.21,
-   "net": 0.57,
-   "n": 3905,
-   "share": 0.19,
+   "name": "진",
+   "favor": 71.67,
+   "interest": 87.53,
+   "intensity": 60.36,
+   "controversy": 0.25,
+   "net": 0.5,
+   "n": 5593,
+   "share": 0.21,
    "rank_lo": 1,
    "rank_hi": 3,
-   "favor_lo": 69.98,
-   "favor_hi": 74.07,
+   "favor_lo": 69.97,
+   "favor_hi": 72.81,
+   "low_sample": false,
+   "quadrant": "인기",
+   "mention_share": 0.17,
+   "examples": [
+    "진이 표정 아 ~진짜 넘 리얼하다 ㅋㅋ찐으로 어이없다는..ㅋㅋ",
+    "저 미친미모 어쩔꺼야 진짜 나라세워 김석진 ❤ 미모로 복지를이룬 왕 김석진"
+   ]
+  },
+  {
+   "rank": 3,
+   "name": "뷔",
+   "favor": 71.31,
+   "interest": 73.13,
+   "intensity": 61.26,
+   "controversy": 0.23,
+   "net": 0.54,
+   "n": 4673,
+   "share": 0.2,
+   "rank_lo": 1,
+   "rank_hi": 3,
+   "favor_lo": 69.16,
+   "favor_hi": 73.02,
    "low_sample": false,
    "quadrant": "조용한 호감",
-   "mention_share": 0.13,
+   "mention_share": 0.14,
    "examples": [
     "뷔의 세심한 배려로 아미 사랑은 변함 없음을 알게함.",
     "자랑스럽고 멋진 SDT 특급전사 김태형"
    ]
   },
   {
-   "rank": 3,
-   "name": "지민",
-   "favor": 70.98,
-   "interest": 65.96,
-   "intensity": 61.44,
-   "controversy": 0.24,
-   "net": 0.52,
-   "n": 4052,
-   "share": 0.2,
-   "rank_lo": 1,
-   "rank_hi": 3,
-   "favor_lo": 68.93,
-   "favor_hi": 73.13,
-   "low_sample": false,
-   "quadrant": "인기",
-   "mention_share": 0.14,
-   "examples": [
-    "지민팬 아미분의 열정이 대단하네요 아미여러분들도 행복하세요~~😂😂😂❤❤❤",
-    "너무 귀여운 지민이 팬분❤"
-   ]
-  },
-  {
    "rank": 4,
    "name": "RM",
-   "favor": 64.97,
+   "favor": 62.78,
    "interest": 100.0,
-   "intensity": 64.27,
+   "intensity": 64.16,
    "controversy": 0.2,
    "net": 0.61,
-   "n": 6143,
-   "share": 0.14,
+   "n": 6390,
+   "share": 0.12,
    "rank_lo": 4,
    "rank_hi": 4,
-   "favor_lo": 63.39,
-   "favor_hi": 66.66,
+   "favor_lo": 61.15,
+   "favor_hi": 64.37,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.21,
+   "mention_share": 0.2,
    "examples": [
     "남준이 헤어스타일 잘어울리네 good~~",
     "What happened to our leader RM😂😂too much cuteness 😅"
@@ -118,83 +118,83 @@
   },
   {
    "rank": 5,
-   "name": "제이홉",
-   "favor": 54.41,
-   "interest": 38.97,
-   "intensity": 63.26,
-   "controversy": 0.19,
-   "net": 0.63,
-   "n": 2394,
-   "share": 0.07,
-   "rank_lo": 5,
-   "rank_hi": 5,
-   "favor_lo": 52.81,
-   "favor_hi": 56.1,
-   "low_sample": false,
-   "quadrant": "관심 부족",
-   "mention_share": 0.08,
-   "examples": [
-    "옆에서 환하게 웃고있는 호석이",
-    "제이블랙과 제이홉은 진짜 춤이 독보적이네!!!"
-   ]
-  },
-  {
-   "rank": 6,
    "name": "정국",
-   "favor": 52.25,
-   "interest": 77.31,
-   "intensity": 51.47,
+   "favor": 52.81,
+   "interest": 86.79,
+   "intensity": 51.39,
    "controversy": 0.32,
-   "net": 0.36,
-   "n": 4749,
+   "net": 0.37,
+   "n": 5546,
    "share": 0.14,
-   "rank_lo": 6,
+   "rank_lo": 5,
    "rank_hi": 6,
-   "favor_lo": 50.35,
-   "favor_hi": 54.04,
+   "favor_lo": 50.98,
+   "favor_hi": 54.44,
    "low_sample": false,
    "quadrant": "화제성",
-   "mention_share": 0.16,
+   "mention_share": 0.17,
    "examples": [
     "정국이 진짜 사기캐 하는거마다 폼 자체가 다름 아육대부터 얼굴은 미소년 존잘쁨인데 능력은 진짜 최고중의 최고",
     "진짜 정국이 어쩜 저리 순수하고 귀여운지"
    ]
   },
   {
+   "rank": 6,
+   "name": "제이홉",
+   "favor": 52.79,
+   "interest": 39.53,
+   "intensity": 62.72,
+   "controversy": 0.19,
+   "net": 0.62,
+   "n": 2526,
+   "share": 0.06,
+   "rank_lo": 5,
+   "rank_hi": 6,
+   "favor_lo": 51.1,
+   "favor_hi": 54.31,
+   "low_sample": false,
+   "quadrant": "관심 부족",
+   "mention_share": 0.08,
+   "examples": [
+    "제이블랙과 제이홉은 진짜 춤이 독보적이네!!!",
+    "옆에서 환하게 웃고있는 호석이"
+   ]
+  },
+  {
    "rank": 7,
    "name": "슈가",
-   "favor": 49.03,
-   "interest": 44.25,
-   "intensity": 59.31,
+   "favor": 48.37,
+   "interest": 43.63,
+   "intensity": 59.65,
    "controversy": 0.24,
    "net": 0.52,
-   "n": 2718,
-   "share": 0.06,
+   "n": 2788,
+   "share": 0.05,
    "rank_lo": 7,
    "rank_hi": 7,
-   "favor_lo": 47.55,
-   "favor_hi": 50.46,
+   "favor_lo": 46.96,
+   "favor_hi": 49.62,
    "low_sample": false,
    "quadrant": "관심 부족",
    "mention_share": 0.09,
    "examples": [
-    "간지 간지 쩐다.슈가 너무 좋아😊😊😊",
-    "슈가 너무 귀엽♡"
+    "슈가 웃는게 더 웃겨~~~ㅎㅎ",
+    "슈가의 저런 점이 너무 좋아ㅋㅋ"
    ]
   }
  ],
  "by_source": {
   "dcinside": {
-   "n": 1440,
-   "pos_ratio": 0.35,
+   "n": 1795,
+   "pos_ratio": 0.33,
    "net": 0.24,
    "controversy": 0.38
   },
   "youtube": {
-   "n": 45028,
-   "pos_ratio": 0.59,
-   "net": 0.53,
-   "controversy": 0.23
+   "n": 49666,
+   "pos_ratio": 0.58,
+   "net": 0.52,
+   "controversy": 0.24
   }
  },
  "history": [
@@ -241,6 +241,21 @@
     "제이홉": 54.41,
     "정국": 52.25,
     "슈가": 49.03
+   }
+  },
+  {
+   "date": "2026-11-22",
+   "favor": 58.82,
+   "interest": 74.56,
+   "mentions_per_day": 571.79,
+   "members": {
+    "지민": 72.71,
+    "진": 71.67,
+    "뷔": 71.31,
+    "RM": 62.78,
+    "정국": 52.81,
+    "제이홉": 52.79,
+    "슈가": 48.37
    }
   }
  ]

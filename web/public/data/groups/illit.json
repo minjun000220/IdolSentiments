@@ -7,44 +7,44 @@
   "ILL-IT",
   "I'll-It"
  ],
- "updated_at": "2026-11-22T00:18:55Z",
+ "updated_at": "2026-11-23T00:53:38Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 50542,
-  "sentences": 60656,
-  "mentions": 49850
+  "docs": 56287,
+  "sentences": 66945,
+  "mentions": 54685
  },
  "group": {
-  "favor": 58.7,
-  "favor_direct": 56.32,
-  "favor_members": 61.08,
+  "favor": 58.14,
+  "favor_direct": 55.74,
+  "favor_members": 60.53,
   "controversy": 0.24,
-  "net": 0.52,
-  "energy": 34630.29,
-  "n": 49850.0,
-  "n_direct": 26954.0,
-  "interest": 74.19,
-  "mentions_per_day": 553.89
+  "net": 0.51,
+  "energy": 36368.85,
+  "n": 54685.0,
+  "n_direct": 29353.0,
+  "interest": 75.27,
+  "mentions_per_day": 607.61
  },
  "members": [
   {
    "rank": 1,
    "name": "원희",
-   "favor": 75.35,
+   "favor": 75.22,
    "interest": 100.0,
-   "intensity": 64.79,
-   "controversy": 0.2,
-   "net": 0.59,
-   "n": 7761,
-   "share": 0.36,
+   "intensity": 64.6,
+   "controversy": 0.21,
+   "net": 0.58,
+   "n": 9491,
+   "share": 0.38,
    "rank_lo": 1,
    "rank_hi": 1,
-   "favor_lo": 74.63,
-   "favor_hi": 76.03,
+   "favor_lo": 74.59,
+   "favor_hi": 75.88,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.34,
+   "mention_share": 0.37,
    "examples": [
     "아이유랑 원희 그냥 너무행복해지는조합이네...",
     "원희 소리지르는거 너무 귀엽고 무대도 모두가 즐길 수 있는 무대였어서 너무 좋았음…🥹 아일릿 일년동안 고생 "
@@ -53,42 +53,42 @@
   {
    "rank": 2,
    "name": "민주",
-   "favor": 58.25,
-   "interest": 66.22,
-   "intensity": 61.27,
+   "favor": 56.53,
+   "interest": 56.44,
+   "intensity": 60.62,
    "controversy": 0.24,
-   "net": 0.53,
-   "n": 5139,
-   "share": 0.2,
+   "net": 0.52,
+   "n": 5357,
+   "share": 0.19,
    "rank_lo": 2,
    "rank_hi": 3,
-   "favor_lo": 56.88,
-   "favor_hi": 59.65,
+   "favor_lo": 55.25,
+   "favor_hi": 57.66,
    "low_sample": false,
    "quadrant": "인기",
-   "mention_share": 0.22,
+   "mention_share": 0.21,
    "examples": [
     "민주 무대 끝나고 털썩 주저앉는거 보고 무대를 얼마나 진심으로하는지 느껴져서 또입덕함…",
-    "민주 표정 너무 잘 쓰고"
+    "민주 미모 미쳤네..."
    ]
   },
   {
    "rank": 3,
    "name": "윤아",
-   "favor": 58.13,
-   "interest": 43.24,
-   "intensity": 62.35,
+   "favor": 56.13,
+   "interest": 36.71,
+   "intensity": 61.65,
    "controversy": 0.21,
-   "net": 0.58,
-   "n": 3356,
-   "share": 0.18,
+   "net": 0.57,
+   "n": 3484,
+   "share": 0.17,
    "rank_lo": 2,
    "rank_hi": 3,
-   "favor_lo": 56.51,
-   "favor_hi": 59.7,
+   "favor_lo": 54.58,
+   "favor_hi": 57.51,
    "low_sample": false,
    "quadrant": "조용한 호감",
-   "mention_share": 0.15,
+   "mention_share": 0.14,
    "examples": [
     "윤아 개웃기네ㅠㅠㅋㅋ",
     "영지 성호 운학 조합 보려고 틀었다가 노윤아 팬클럽+1 성격 정말정말 좋고 영상 내내 어색함 하나도 안 느껴"
@@ -97,17 +97,17 @@
   {
    "rank": 4,
    "name": "이로하",
-   "favor": 50.38,
-   "interest": 33.15,
-   "intensity": 60.36,
+   "favor": 49.93,
+   "interest": 29.49,
+   "intensity": 60.14,
    "controversy": 0.23,
    "net": 0.54,
-   "n": 2573,
+   "n": 2799,
    "share": 0.11,
    "rank_lo": 4,
    "rank_hi": 4,
-   "favor_lo": 48.88,
-   "favor_hi": 52.02,
+   "favor_lo": 48.52,
+   "favor_hi": 51.4,
    "low_sample": false,
    "quadrant": "관심 부족",
    "mention_share": 0.11,
@@ -119,20 +119,20 @@
   {
    "rank": 5,
    "name": "모카",
-   "favor": 41.98,
-   "interest": 52.4,
-   "intensity": 46.79,
+   "favor": 40.86,
+   "interest": 44.26,
+   "intensity": 46.34,
    "controversy": 0.34,
-   "net": 0.33,
-   "n": 4067,
+   "net": 0.32,
+   "n": 4201,
    "share": 0.15,
    "rank_lo": 5,
    "rank_hi": 5,
-   "favor_lo": 40.61,
-   "favor_hi": 43.29,
+   "favor_lo": 39.53,
+   "favor_hi": 42.05,
    "low_sample": false,
    "quadrant": "화제성",
-   "mention_share": 0.18,
+   "mention_share": 0.17,
    "examples": [
     "진심 개잘했음 감탄나옴 모카도 있었음 더 좋았을텐데ㅠㅠ",
     "우리릿 원래도 무대 잘 했지만 아바미 잇츠미 쩨뽀하겠어까지 컨셉도 더 넓어지고 이렇게 큰 무대에서도 에너지 "
@@ -141,16 +141,16 @@
  ],
  "by_source": {
   "dcinside": {
-   "n": 4803,
+   "n": 6401,
    "pos_ratio": 0.39,
-   "net": 0.27,
+   "net": 0.26,
    "controversy": 0.37
   },
   "youtube": {
-   "n": 45047,
+   "n": 48284,
    "pos_ratio": 0.59,
    "net": 0.53,
-   "controversy": 0.23
+   "controversy": 0.24
   }
  },
  "history": [
@@ -217,6 +217,19 @@
     "윤아": 58.13,
     "이로하": 50.38,
     "모카": 41.98
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "favor": 58.14,
+   "interest": 75.27,
+   "mentions_per_day": 607.61,
+   "members": {
+    "원희": 75.22,
+    "민주": 56.53,
+    "윤아": 56.13,
+    "이로하": 49.93,
+    "모카": 40.86
    }
   }
  ]
