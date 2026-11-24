@@ -8,25 +8,25 @@
   "NJZ",
   "엔제이지"
  ],
- "updated_at": "2026-11-23T01:08:12Z",
+ "updated_at": "2026-11-24T05:20:14Z",
  "days": 90,
  "sentiment_model": "anchor",
  "counts": {
-  "docs": 30404,
-  "sentences": 44588,
-  "mentions": 34378
+  "docs": 30137,
+  "sentences": 44265,
+  "mentions": 34096
  },
  "group": {
-  "favor": 43.92,
-  "favor_direct": 30.74,
-  "favor_members": 57.1,
+  "favor": 43.8,
+  "favor_direct": 30.66,
+  "favor_members": 56.94,
   "controversy": 0.48,
-  "net": 0.04,
-  "energy": 13562.55,
-  "n": 34378.0,
-  "n_direct": 22568.0,
-  "interest": 69.83,
-  "mentions_per_day": 381.98
+  "net": 0.03,
+  "energy": 13162.68,
+  "n": 34096.0,
+  "n_direct": 22352.0,
+  "interest": 69.74,
+  "mentions_per_day": 378.84
  },
  "members": [
   {
@@ -34,15 +34,15 @@
    "name": "해린",
    "favor": 71.35,
    "interest": 100.0,
-   "intensity": 59.06,
+   "intensity": 59.07,
    "controversy": 0.27,
    "net": 0.47,
-   "n": 3990,
+   "n": 3993,
    "share": 0.27,
    "rank_lo": 1,
    "rank_hi": 1,
-   "favor_lo": 70.15,
-   "favor_hi": 72.77,
+   "favor_lo": 69.99,
+   "favor_hi": 72.69,
    "low_sample": false,
    "quadrant": "인기",
    "mention_share": 0.34,
@@ -54,17 +54,17 @@
   {
    "rank": 2,
    "name": "민지",
-   "favor": 57.28,
-   "interest": 34.46,
-   "intensity": 58.3,
+   "favor": 57.05,
+   "interest": 34.16,
+   "intensity": 58.07,
    "controversy": 0.29,
    "net": 0.42,
-   "n": 1375,
+   "n": 1364,
    "share": 0.15,
    "rank_lo": 2,
-   "rank_hi": 3,
-   "favor_lo": 53.79,
-   "favor_hi": 60.19,
+   "rank_hi": 2,
+   "favor_lo": 54.09,
+   "favor_hi": 59.96,
    "low_sample": false,
    "quadrant": "조용한 호감",
    "mention_share": 0.12,
@@ -75,42 +75,20 @@
   },
   {
    "rank": 3,
-   "name": "혜인",
-   "favor": 53.29,
-   "interest": 49.77,
-   "intensity": 55.67,
-   "controversy": 0.29,
-   "net": 0.41,
-   "n": 1986,
-   "share": 0.13,
-   "rank_lo": 3,
-   "rank_hi": 4,
-   "favor_lo": 50.9,
-   "favor_hi": 56.41,
-   "low_sample": false,
-   "quadrant": "인기",
-   "mention_share": 0.17,
-   "examples": [
-    "Hyein is so adorable 🥹❤",
-    "hyein so cute 🥰🥰"
-   ]
-  },
-  {
-   "rank": 4,
    "name": "다니엘",
-   "favor": 52.67,
-   "interest": 95.59,
+   "favor": 52.59,
+   "interest": 95.47,
    "intensity": 37.91,
    "controversy": 0.48,
    "net": 0.04,
-   "n": 3814,
+   "n": 3812,
    "share": 0.36,
    "rank_lo": 3,
    "rank_hi": 4,
-   "favor_lo": 49.71,
-   "favor_hi": 55.67,
+   "favor_lo": 49.78,
+   "favor_hi": 55.37,
    "low_sample": false,
-   "quadrant": "논란 중심",
+   "quadrant": "인기",
    "mention_share": 0.32,
    "examples": [
     "다니엘 항상 응원할게.",
@@ -118,19 +96,41 @@
    ]
   },
   {
+   "rank": 4,
+   "name": "혜인",
+   "favor": 52.41,
+   "interest": 48.61,
+   "intensity": 55.14,
+   "controversy": 0.3,
+   "net": 0.4,
+   "n": 1941,
+   "share": 0.13,
+   "rank_lo": 3,
+   "rank_hi": 4,
+   "favor_lo": 49.63,
+   "favor_hi": 55.57,
+   "low_sample": false,
+   "quadrant": "화제성",
+   "mention_share": 0.17,
+   "examples": [
+    "Hyein is so adorable 🥹❤",
+    "hyein so cute 🥰🥰"
+   ]
+  },
+  {
    "rank": 5,
    "name": "하니",
-   "favor": 38.48,
-   "interest": 16.17,
-   "intensity": 44.01,
+   "favor": 38.3,
+   "interest": 15.88,
+   "intensity": 43.88,
    "controversy": 0.41,
-   "net": 0.18,
-   "n": 645,
+   "net": 0.17,
+   "n": 634,
    "share": 0.09,
    "rank_lo": 5,
    "rank_hi": 5,
-   "favor_lo": 34.98,
-   "favor_hi": 41.77,
+   "favor_lo": 34.84,
+   "favor_hi": 41.9,
    "low_sample": false,
    "quadrant": "관심 부족",
    "mention_share": 0.05,
@@ -142,16 +142,16 @@
  ],
  "by_source": {
   "dcinside": {
-   "n": 596,
+   "n": 610,
    "pos_ratio": 0.39,
    "net": 0.3,
    "controversy": 0.35
   },
   "youtube": {
-   "n": 33782,
+   "n": 33486,
    "pos_ratio": 0.35,
    "net": 0.03,
-   "controversy": 0.48
+   "controversy": 0.49
   }
  },
  "history": [
@@ -231,6 +231,19 @@
     "혜인": 53.29,
     "다니엘": 52.67,
     "하니": 38.48
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "favor": 43.8,
+   "interest": 69.74,
+   "mentions_per_day": 378.84,
+   "members": {
+    "해린": 71.35,
+    "민지": 57.05,
+    "다니엘": 52.59,
+    "혜인": 52.41,
+    "하니": 38.3
    }
   }
  ]
