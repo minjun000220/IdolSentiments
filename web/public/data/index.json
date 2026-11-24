@@ -137,6 +137,32 @@
    ],
    "top_member": "원희",
    "mentions": 54685
+  },
+  {
+   "key": "twice",
+   "name": "트와이스",
+   "aliases": [
+    "트와이스",
+    "Twice",
+    "TWICE",
+    "톼이스"
+   ],
+   "updated_at": "2026-11-24T03:44:21Z",
+   "favor": 52.83,
+   "interest": 62.98,
+   "members": [
+    "나연",
+    "사나",
+    "미나",
+    "지효",
+    "채영",
+    "정연",
+    "다현",
+    "쯔위",
+    "모모"
+   ],
+   "top_member": "나연",
+   "mentions": 19130
   }
  ]
 }

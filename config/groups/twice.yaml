@@ -1,0 +1,77 @@
+# 자동 생성됨 (출처: wikidata:Q20645861). 멤버/별칭/갤러리가 틀리면 직접 고쳐도 됩니다.
+# 다시 만들려면: python main.py setup "트와이스" --refresh
+group:
+  name: 트와이스
+  aliases:
+  - 트와이스
+  - Twice
+  - TWICE
+  - 톼이스
+members:
+  나연:
+    aliases:
+    - 나연
+    - Im Nayeon
+    - 임나연
+    - im nayeon
+    - nayeon
+    - im unnie
+  정연:
+    aliases:
+    - 정연
+    - Yoo Jeong-yeon
+    - 유정연
+    - Jeongyeon
+  모모:
+    aliases:
+    - 모모
+    - Momo
+    - Hirai Momo
+  사나:
+    aliases:
+    - 사나
+    - Minatozaki Sana
+    - Sana
+    - minatozaki
+  지효:
+    aliases:
+    - 지효
+    - Park Ji-hyo
+    - 박지효
+    - Ji-hyo Park
+    - Park Jihyo
+    - Jihyo
+  미나:
+    aliases:
+    - 미나
+    - Mina Myoi
+    - 묘이 미나
+    - Mina Sharon Myoi
+  다현:
+    aliases:
+    - 다현
+    - Kim Da-hyun
+    - 김다현
+    - Dubu tofu
+    - Dahyun
+  채영:
+    aliases:
+    - 채영
+    - Son Chaeyoung
+    - 손채영
+    - Chae
+  쯔위:
+    aliases:
+    - 쯔위
+    - Chou Tzuyu
+    - 저우쯔위
+    - Tzuyu
+youtube:
+  queries: []
+  channel_ids: []
+dcinside:
+  galleries:
+  - id: twice_new
+    type: main
+    mode: list
+    name: TWICE
