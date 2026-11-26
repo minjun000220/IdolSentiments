@@ -8,9 +8,9 @@
     "아이브",
     "Ive"
    ],
-   "updated_at": "2026-11-25T03:54:03Z",
-   "favor": 61.86,
-   "interest": 71.23,
+   "updated_at": "2026-11-26T03:02:07Z",
+   "favor": 61.87,
+   "interest": 71.19,
    "members": [
     "리즈",
     "유진",
@@ -20,7 +20,7 @@
     "나오이 레이"
    ],
    "top_member": "리즈",
-   "mentions": 38746
+   "mentions": 38593
   },
   {
    "key": "newjeans",
@@ -32,9 +32,9 @@
     "NJZ",
     "엔제이지"
    ],
-   "updated_at": "2026-11-25T04:06:10Z",
-   "favor": 43.78,
-   "interest": 69.73,
+   "updated_at": "2026-11-26T03:13:17Z",
+   "favor": 43.81,
+   "interest": 69.7,
    "members": [
     "해린",
     "민지",
@@ -43,7 +43,7 @@
     "하니"
    ],
    "top_member": "해린",
-   "mentions": 34064
+   "mentions": 33995
   },
   {
    "key": "리센느",
@@ -52,9 +52,9 @@
     "리센느",
     "RESCENE"
    ],
-   "updated_at": "2026-11-25T04:45:30Z",
-   "favor": 61.35,
-   "interest": 81.5,
+   "updated_at": "2026-11-26T04:04:07Z",
+   "favor": 61.26,
+   "interest": 81.59,
    "members": [
     "미나미",
     "원이",
@@ -63,7 +63,7 @@
     "제나"
    ],
    "top_member": "미나미",
-   "mentions": 92981
+   "mentions": 93765
   },
   {
    "key": "bts",
@@ -74,9 +74,9 @@
     "防彈少年團",
     "비티에스"
    ],
-   "updated_at": "2026-11-25T02:48:36Z",
-   "favor": 57.9,
-   "interest": 76.18,
+   "updated_at": "2026-11-26T02:08:00Z",
+   "favor": 57.85,
+   "interest": 76.17,
    "members": [
     "지민",
     "뷔",
@@ -87,7 +87,7 @@
     "슈가"
    ],
    "top_member": "지민",
-   "mentions": 59092
+   "mentions": 59031
   },
   {
    "key": "girlsgeneration",
@@ -100,9 +100,9 @@
     "So nyeo shsi dae",
     "SNSD"
    ],
-   "updated_at": "2026-11-25T03:02:53Z",
-   "favor": 55.64,
-   "interest": 73.43,
+   "updated_at": "2026-11-26T02:19:33Z",
+   "favor": 55.6,
+   "interest": 73.3,
    "members": [
     "효연",
     "태연",
@@ -114,7 +114,7 @@
     "티파니 영"
    ],
    "top_member": "효연",
-   "mentions": 46742
+   "mentions": 46206
   },
   {
    "key": "illit",
@@ -125,9 +125,9 @@
     "ILL-IT",
     "I'll-It"
    ],
-   "updated_at": "2026-11-25T03:50:17Z",
-   "favor": 57.98,
-   "interest": 76.34,
+   "updated_at": "2026-11-26T03:02:00Z",
+   "favor": 57.87,
+   "interest": 76.54,
    "members": [
     "원희",
     "민주",
@@ -136,7 +136,7 @@
     "모카"
    ],
    "top_member": "원희",
-   "mentions": 59910
+   "mentions": 60928
   },
   {
    "key": "twice",
@@ -147,9 +147,9 @@
     "TWICE",
     "톼이스"
    ],
-   "updated_at": "2026-11-25T04:14:37Z",
-   "favor": 52.3,
-   "interest": 63.21,
+   "updated_at": "2026-11-26T03:30:08Z",
+   "favor": 51.74,
+   "interest": 63.38,
    "members": [
     "나연",
     "사나",
@@ -162,7 +162,7 @@
     "모모"
    ],
    "top_member": "나연",
-   "mentions": 19519
+   "mentions": 19795
   }
  ]
 }
